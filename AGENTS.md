@@ -11,3 +11,5 @@ Permanent keys belong only in server environment variables or the explicit opt-i
 Keep voice optional, explicit, current-slide-only and bounded. Preserve Alloy/Shimmer, default Alloy, shared 2,048-token response budget and current-slide reference updates. Use mocks for automated token and WebRTC tests; no billable test calls. Do not claim actual device playback or full accessibility based on DOM tests.
 
 Run npm run build and npm test; inspect generated parity and public artifact contents before publishing. Report deployment checks separately from device verification.
+
+Voice controls and login must stay disabled on GitHub Pages; hosted private voice is intended for Vercel. Preserve this restriction across learner rerenders.

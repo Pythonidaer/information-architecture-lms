@@ -1,5 +1,6 @@
 /* Permanent keys are saved only by the opt-in localhost helper. No analytics, recordings, or persisted transcript. */
 document.addEventListener('DOMContentLoaded',()=>{
+ if(window.VoiceAccess?.enabled===false)return;
  const local=['localhost','127.0.0.1'].includes(location.hostname),$=s=>document.querySelector(s);
  const hosted=window.VoiceAccess?.hosted===true;
  const dlg=document.createElement('dialog');dlg.className='voice-dialog';dlg.id='voice-dialog';dlg.setAttribute('aria-labelledby','voice-title');

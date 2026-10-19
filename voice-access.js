@@ -1,6 +1,14 @@
 /* Authentication is server-enforced. The shortcut only keeps admin UI out of the learner view. */
 (()=>{
- const legacy=['localhost','127.0.0.1','pythonidaer.github.io'].includes(location.hostname);
+ // Pages is a public, static course. Private voice is enabled on the hosted deployment.
+ if(location.hostname.endsWith('.github.io')){
+  const hide=()=>document.querySelectorAll('[data-voice-open]').forEach(b=>b.hidden=true);
+  window.VoiceAccess={enabled:false,hosted:false,isAuthenticated:()=>false};
+  document.addEventListener('DOMContentLoaded',hide);
+  document.addEventListener('lms:render',hide);
+  hide();return;
+ }
+ const legacy=['localhost','127.0.0.1'].includes(location.hostname);
  let authenticated=legacy,configured=legacy,configurationMessage='Checking server setup…';
  function sync(){document.querySelectorAll('[data-voice-open]').forEach(b=>b.hidden=!authenticated);document.dispatchEvent(new CustomEvent('voice:access',{detail:{authenticated,hosted:!legacy}}))}
  async function refresh(){if(legacy){sync();return true}try{const r=await fetch('/api/voice?action=status',{credentials:'same-origin',cache:'no-store',signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error();const data=await r.json();configured=data.configured===true;authenticated=data.authenticated===true;configurationMessage=configured?'':Array.isArray(data.configurationIssues)&&data.configurationIssues.length?'Server setup needs attention: '+data.configurationIssues.join('; ')+'. Update Production environment variables and redeploy.':'Voice is not configured. Check Production environment variables and redeploy.';if(document.querySelector('#voice-login')?.open&&!authenticated)document.querySelector('#voice-login-status').textContent=configurationMessage}catch{authenticated=false;configured=false;configurationMessage='Could not reach the voice server. Check the deployment and try again.'}sync();return authenticated}

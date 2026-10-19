@@ -59,7 +59,7 @@ Authentication uses a signed 12-hour HttpOnly/Secure/SameSite=Strict cookie, sam
 
 ## GitHub Pages and local voice
 
-GitHub Actions builds, tests and publishes an allowlisted static artifact. Pages cannot run the password/token API. For private voice independent of a local helper, use the Vercel deployment.
+GitHub Actions builds, tests and publishes an allowlisted static artifact. Voice controls and login are disabled on GitHub Pages. Use the Vercel deployment for private voice.
 
 For local development:
 
@@ -72,7 +72,7 @@ npm start
 
 Open `http://127.0.0.1:8787`. The helper can use `OPENAI_API_KEY`, an unsaved modal key, or an explicit opt-in save to `~/.config/information-architecture-lms/voice.json`. The saved file is outside the repository and owner-only; it is not encrypted. The browser does not persist the permanent key. Config status exposes only booleans, and Forget saved key deletes it.
 
-The Pages frontend can use the localhost helper, subject to browser local-network permissions, or a short-lived `ek` token. `npm run token` creates a token using the environment key. Use the same-origin local page if the browser blocks Pages-to-localhost access. The helper trusts localhost and the exact `https://pythonidaer.github.io` origin; it does not serve credential files.
+Local voice remains available on the localhost development page. `npm run token` creates a short-lived token using the environment key. The GitHub Pages course does not initialise voice or request helper/API services.
 
 ## Editing and checks
 

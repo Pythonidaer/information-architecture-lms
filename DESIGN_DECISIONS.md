@@ -10,3 +10,7 @@
 - Carry over Alloy/Shimmer, requested British accent, 2,048 output tokens per reply, current-slide heading/body updates and nonmodal active-call controls. These features retain the source implementation; they require actual-device verification after this project's deployment. A source-project token-limit fix does not establish every audio cause is resolved.
 - Source access: video summaries were reviewed, not full transcripts. The accordion-icons reading was available as an indexed excerpt while direct retrieval failed. The menu checklist changed from 15 to 17 guidelines. The supplementary qualitative/quantitative study guides are overview references, not additional entire curricula.
 - Tests exercise data integrity, source order and coverage, safe public output, all slides in a DOM environment and mocked voice/authentication. Do not equate that with rendered browser review, full accessibility, real Vercel credentials or paid playback.
+
+## GitHub Pages voice visibility
+
+Disable voice initialisation, login and the microphone icon on github.io, including after learner rerenders. Keep local development support and server-verified voice access on Vercel. The public Pages course has no voice entry point.
