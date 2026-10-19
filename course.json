@@ -1,0 +1,3515 @@
+{
+  "schemaVersion": 1,
+  "id": "information-architecture-course-v1",
+  "title": "Information architecture",
+  "description": "Organise information, write useful labels, research structures and design navigation. Follow NN/g’s IA reading path with original practice and an applied project.",
+  "sections": [
+    {
+      "id": "start",
+      "type": "section",
+      "title": "1 Start",
+      "children": [
+        {
+          "id": "welcome",
+          "type": "slides",
+          "title": "Use this course",
+          "slides": [
+            {
+              "id": "welcome-1",
+              "title": "Learn to organise information",
+              "body": "By the end, you should be able to propose an information structure, choose meaningful labels, plan research, interpret finding problems and specify navigation. Reading every slide is completion; applying and testing the decisions provides stronger evidence of learning."
+            },
+            {
+              "id": "welcome-2",
+              "title": "Follow the reading path",
+              "body": "Start here, then work through Principles, Research and Navigation in the order recommended by NN/g. The final applied workshops connect those ideas to an end-to-end project. All lessons remain available if you need to jump to a specific question."
+            },
+            {
+              "id": "welcome-3",
+              "title": "Work in small sessions",
+              "body": "Choose one lesson and complete its practice before moving on. Use your notes to record an answer, uncertainty and next check. Return later and explain the idea without rereading. Short slides make delivery manageable; they do not guarantee understanding."
+            },
+            {
+              "id": "welcome-4",
+              "title": "Understand the sources",
+              "body": "This independent course uses original explanations, fictional examples and exercises. It is not an official NN/g course or a reproduction of its publications. External readings open in a new tab. Video pages were reviewed through their available summaries; video transcripts were not available."
+            },
+            {
+              "id": "welcome-5",
+              "title": "Use voice as a study tool",
+              "body": "On Vercel, private sign-in reveals the microphone icon. The tutor receives the current slide heading and text, not a view of your screen or private notes. Ask it to explain a term, challenge a decision or read the slide. API usage is billed separately."
+            },
+            {
+              "id": "welcome-6",
+              "title": "Keep your work",
+              "body": "Progress and notes stay in this browser. Use the report and copy/export controls for a separate record. Practical exercises are self-assessed; quizzes check selected concepts and do not certify professional competence."
+            }
+          ],
+          "sourceIds": [
+            "guide"
+          ]
+        },
+        {
+          "id": "cedar-brief",
+          "type": "slides",
+          "title": "Choose your practice project",
+          "slides": [
+            {
+              "id": "cedar-brief-1",
+              "title": "Meet Cedar Community Centre",
+              "body": "Cedar is a fictional service offering classes, events, membership, swimming, room hire and support. New visitors need to understand what exists. Returning members need quick routes to bookings, preparation, cancellation and fee information."
+            },
+            {
+              "id": "cedar-brief-2",
+              "title": "Use this starting inventory",
+              "body": "| ID | Content | Current location |\n| --- | --- | --- |\n| C1 | Pottery for beginners | Activities |\n| C2 | Course dates and fees | Downloads |\n| C3 | Cancel a booking | Member zone |\n| C4 | Reduced fees | About |\n| C5 | Accessible facilities | Footer |\n| C6 | Hire a room | Other |"
+            },
+            {
+              "id": "cedar-brief-3",
+              "title": "Add enough variety",
+              "body": "Include swimming age limits, tutor profiles, contact details, opening hours, events, equipment loans, membership renewal, venue directions and booking preparation. These authored items give you ambiguity and different tasks to investigate. They are not findings from actual Cedar users."
+            },
+            {
+              "id": "cedar-brief-4",
+              "title": "Define success before redesign",
+              "body": "Choose three outcomes: a newcomer finds an affordable evening class; a member checks cancellation conditions; a visitor determines whether a venue meets access needs. Write what information would demonstrate success for each."
+            },
+            {
+              "id": "cedar-brief-5",
+              "title": "Record assumptions",
+              "body": "For each task, write what you know, what you assume and what evidence you need. If using your own site, replace Cedar with a manageable area while preserving important content types and tasks."
+            },
+            {
+              "id": "cedar-brief-6",
+              "title": "Save a baseline",
+              "body": "Keep your starting structure and labels. Later you will compare them with a revised structure using equivalent tasks. Do not silently rewrite your baseline after you see the results."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "start-check",
+          "type": "quiz",
+          "title": "Check: Start",
+          "skill": "Check: Start",
+          "questions": [
+            {
+              "id": "start-check-q1",
+              "prompt": "What would demonstrate more than slide completion?",
+              "options": [
+                "Memorising the number of menu items",
+                "Testing a proposed structure with realistic tasks",
+                "Opening every slide quickly"
+              ],
+              "answer": 1,
+              "explanation": "Applied evidence is stronger than a record of viewing content."
+            },
+            {
+              "id": "start-check-q2",
+              "prompt": "Which is a useful project goal?",
+              "options": [
+                "A newcomer finds cancellation conditions",
+                "The site has exactly six categories",
+                "Every page has a shorter title"
+              ],
+              "answer": 0,
+              "explanation": "Define a useful outcome before choosing a structure."
+            },
+            {
+              "id": "start-check-q3",
+              "prompt": "What does the voice tutor receive?",
+              "options": [
+                "All private notes automatically",
+                "A live visual view of every browser tab",
+                "The supplied current slide heading and text"
+              ],
+              "answer": 2,
+              "explanation": "The app supplies slide text; screen pixels and private notes are excluded."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "type": "section",
+      "title": "2 Structure and organisation",
+      "children": [
+        {
+          "id": "topic-30",
+          "type": "slides",
+          "title": "Separate structure from navigation",
+          "slides": [
+            {
+              "id": "topic-30-1",
+              "title": "Define the underlying structure",
+              "body": "Learn to distinguish an information architecture from its visible controls. IA defines what content and functions exist, their relationships and the names used to describe them."
+            },
+            {
+              "id": "topic-30-2",
+              "title": "Choose the right deliverable",
+              "body": "An inventory records what exists. An audit evaluates it. A sitemap describes relationships. A navigation specification describes how people move through the interface. These documents answer different questions."
+            },
+            {
+              "id": "topic-30-3",
+              "title": "Design structure before choosing controls",
+              "body": "A menu is one view of an information space. Start with its content and complexity, then prototype suitable controls. A visually attractive menu cannot repair missing content or confusing categories."
+            },
+            {
+              "id": "topic-30-4",
+              "title": "Worked example",
+              "body": "At Cedar Community Centre, “Membership” contains eligibility, prices and renewal. That relationship is IA. Displaying those destinations in a sidebar is navigation. Giving the renewal button a green background is visual design."
+            },
+            {
+              "id": "topic-30-5",
+              "title": "Try it in your notes",
+              "body": "Classify these decisions in your notes: merge duplicate price pages; add a breadcrumb; rename “Member services” to “Membership”; increase button padding. Which require understanding the content?"
+            },
+            {
+              "id": "topic-30-6",
+              "title": "Review your answer",
+              "body": "Merging and naming are IA decisions. The breadcrumb is navigation; padding is visual/interaction design. They influence each other. Explain the user need behind each decision rather than treating disciplines as isolated boxes."
+            },
+            {
+              "id": "topic-30-7",
+              "title": "Read the original",
+              "body": "[The Difference Between Information Architecture (IA) and Navigation](https://www.nngroup.com/articles/ia-vs-navigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-30"
+          ],
+          "guideOrder": 1
+        },
+        {
+          "id": "topic-31",
+          "type": "slides",
+          "title": "Model one system in different ways",
+          "slides": [
+            {
+              "id": "topic-31-1",
+              "title": "Compare three views",
+              "body": "Learn when to use a full IA structure, a taxonomy and a navigation model. The structure describes relationships; a taxonomy controls classification; navigation exposes useful routes."
+            },
+            {
+              "id": "topic-31-2",
+              "title": "Do not force identical models",
+              "body": "A navigation menu need not display every taxonomy term or every page. Background classification can support related content and search without becoming a top-level menu."
+            },
+            {
+              "id": "topic-31-3",
+              "title": "Keep models connected",
+              "body": "Give content stable identifiers so the same item can appear in several views. Document which categories, terms and controls refer to that item."
+            },
+            {
+              "id": "topic-31-4",
+              "title": "Worked example",
+              "body": "Cedar has one pottery course record. Its IA parent is Courses. Its metadata includes subject “Arts”, level “Beginner” and venue “West hall”. Navigation exposes Courses and a subject filter, without adding West hall to the main menu."
+            },
+            {
+              "id": "topic-31-5",
+              "title": "Try it in your notes",
+              "body": "Describe a beginner coding workshop in three views: its home in the IA, three classification fields, and a visible route to find it."
+            },
+            {
+              "id": "topic-31-6",
+              "title": "Review your answer",
+              "body": "One possible answer: Courses / Computing / Beginner coding; subject Computing, level Beginner, delivery In person; Courses menu plus subject and level filters. Check that your views all identify the same record. This is an authored example, not a universal model."
+            },
+            {
+              "id": "topic-31-7",
+              "title": "Read the original",
+              "body": "[Information Architecture: 3 Key Models (Video)](https://www.nngroup.com/videos/information-architecture-models/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-31"
+          ],
+          "guideOrder": 2
+        },
+        {
+          "id": "topic-32",
+          "type": "slides",
+          "title": "Distinguish finding from discovering",
+          "slides": [
+            {
+              "id": "topic-32-1",
+              "title": "Recognise the two goals",
+              "body": "Findability concerns something people expect to exist. Discoverability concerns something they encounter without already knowing about it. A product can support one and neglect the other."
+            },
+            {
+              "id": "topic-32-2",
+              "title": "Match the research question",
+              "body": "A task that explicitly names a feature tests finding it. It does not show whether someone would notice that feature during ordinary activity."
+            },
+            {
+              "id": "topic-32-3",
+              "title": "Support both behaviours",
+              "body": "Provide direct routes for known needs and relevant contextual routes for unfamiliar offerings. Do not confuse promotional visibility with useful discovery."
+            },
+            {
+              "id": "topic-32-4",
+              "title": "Worked example",
+              "body": "A member searches for “renew membership”: a finding task. While viewing renewal, they notice reduced fees for carers: discovery. A separate, relevant eligibility link could support that discovery without interrupting renewal."
+            },
+            {
+              "id": "topic-32-5",
+              "title": "Try it in your notes",
+              "body": "Choose an expected service and a useful unfamiliar service at Cedar. Write a task to test the first and an observation scenario for the second."
+            },
+            {
+              "id": "topic-32-6",
+              "title": "Review your answer",
+              "body": "Ask someone to find opening hours. Separately, observe a realistic booking task and see whether they notice accessibility support. Avoid mentioning the support feature in advance if your question is unaided discovery."
+            },
+            {
+              "id": "topic-32-7",
+              "title": "Read the original",
+              "body": "[Findability vs. Discoverability (Video)](https://www.nngroup.com/videos/findability-vs-discoverability/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-32"
+          ],
+          "guideOrder": 3
+        },
+        {
+          "id": "topic-33",
+          "type": "slides",
+          "title": "Strengthen information scent",
+          "slides": [
+            {
+              "id": "topic-33-1",
+              "title": "Predict the destination",
+              "body": "Information scent is the evidence people use to predict whether a route will answer their question. It depends on their current goal, not a link’s wording alone."
+            },
+            {
+              "id": "topic-33-2",
+              "title": "Align the cues",
+              "body": "The label, accompanying description, surrounding context and previous experience all influence expectations. The destination should fulfil the promise made by those cues."
+            },
+            {
+              "id": "topic-33-3",
+              "title": "Avoid misleading attraction",
+              "body": "A tempting label can increase clicks while producing disappointment. Judge whether people reach useful content and complete their task, not whether a link attracts attention."
+            },
+            {
+              "id": "topic-33-4",
+              "title": "Worked example",
+              "body": "“Discover possibilities” offers weak evidence for someone seeking a refund. “Cancel a class and request a refund” predicts the task. Placing it in Booking help strengthens the surrounding context."
+            },
+            {
+              "id": "topic-33-5",
+              "title": "Try it in your notes",
+              "body": "Write two labels for Cedar’s cancellation policy. For each, predict what a member would expect after selecting it. Then compare the destination’s heading and opening paragraph."
+            },
+            {
+              "id": "topic-33-6",
+              "title": "Review your answer",
+              "body": "“Class cancellation and refunds” is a plausible label if both topics are present. “Get your money back” is misleading if refunds depend on a deadline. Preserve the condition in nearby text and test expectations with readers."
+            },
+            {
+              "id": "topic-33-7",
+              "title": "Read the original",
+              "body": "[Information Scent: How Users Decide Where to Go Next](https://www.nngroup.com/articles/information-scent/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-33"
+          ],
+          "guideOrder": 4
+        },
+        {
+          "id": "topic-34",
+          "type": "slides",
+          "title": "Make search and browsing work together",
+          "slides": [
+            {
+              "id": "topic-34-1",
+              "title": "Use complementary routes",
+              "body": "Search helps people with a specific query. Navigation exposes the scope of a site and helps people who do not yet know its vocabulary. The balance depends on users and content."
+            },
+            {
+              "id": "topic-34-2",
+              "title": "Reduce recall demands",
+              "body": "Typing a query requires remembering or inventing terms. Browsing lets people recognise available options. Search also depends on result quality and recovery from poor queries."
+            },
+            {
+              "id": "topic-34-3",
+              "title": "Reconnect results to structure",
+              "body": "A result should provide enough context to understand its type and location. Let people continue browsing relevant categories after arriving through search."
+            },
+            {
+              "id": "topic-34-4",
+              "title": "Worked example",
+              "body": "A returning learner searches “pottery Tuesday”. A newcomer browses Courses / Arts because they do not know Cedar’s class names. Both reach the same course record and can inspect related classes."
+            },
+            {
+              "id": "topic-34-5",
+              "title": "Try it in your notes",
+              "body": "List three queries for a workshop and two browse routes. Include a synonym and a misspelling. What happens when there are no matching results?"
+            },
+            {
+              "id": "topic-34-6",
+              "title": "Review your answer",
+              "body": "An authored plan could map “coding” and “programming” to the same subject, preserve the query on an empty state and offer related categories. Test actual retrieval before claiming that synonyms or spelling correction work."
+            },
+            {
+              "id": "topic-34-7",
+              "title": "Read the original",
+              "body": "[Search Box vs. Navigation (Video)](https://www.nngroup.com/videos/search-box-vs-navigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-34"
+          ],
+          "guideOrder": 5
+        },
+        {
+          "id": "topic-35",
+          "type": "slides",
+          "title": "Choose menu size from the content",
+          "slides": [
+            {
+              "id": "topic-35-1",
+              "title": "Reject a magic item count",
+              "body": "A menu does not become usable simply by containing seven options. Its size should reflect content breadth and the difficulty of recognising meaningful categories."
+            },
+            {
+              "id": "topic-35-2",
+              "title": "Evaluate the actual options",
+              "body": "Consider how distinct and familiar labels are, how much space the pattern provides, and whether people can scan the list. Splitting or combining categories creates tradeoffs."
+            },
+            {
+              "id": "topic-35-3",
+              "title": "Test representative tasks",
+              "body": "Try finding common and less common items. Watch hesitation, mistaken choices and backtracking. Use that evidence to refine grouping rather than meeting an arbitrary count."
+            },
+            {
+              "id": "topic-35-4",
+              "title": "Worked example",
+              "body": "Cedar has five services today. Adding childcare and venue hire could justify more visible categories. Hiding them under “Other” solely to keep five links would reduce the evidence available to visitors."
+            },
+            {
+              "id": "topic-35-5",
+              "title": "Try it in your notes",
+              "body": "Propose two top-level menus for Cedar: one with broad groups and one with more specific groups. Predict which tasks each might make harder."
+            },
+            {
+              "id": "topic-35-6",
+              "title": "Review your answer",
+              "body": "“Activities” may be compact but ambiguous between classes and events. Separate Courses and Events may be easier to recognise. A proposed menu is a hypothesis; compare it using the same tasks and representative participants."
+            },
+            {
+              "id": "topic-35-7",
+              "title": "Read the original",
+              "body": "[How Many Items in a Navigation Menu? (Video)](https://www.nngroup.com/videos/number-items-navigation-menu/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-35"
+          ],
+          "guideOrder": 6
+        },
+        {
+          "id": "topic-36",
+          "type": "slides",
+          "title": "Balance breadth and depth",
+          "slides": [
+            {
+              "id": "topic-36-1",
+              "title": "Compare structural tradeoffs",
+              "body": "A broad hierarchy has more choices at each level; a deep hierarchy has more levels. Both can create effort: scanning many choices or repeatedly deciding where to go next."
+            },
+            {
+              "id": "topic-36-2",
+              "title": "Separate structure from presentation",
+              "body": "A multi-level hierarchy can be exposed through a mega menu or through successive category pages. Visible clicks do not directly reveal the underlying structure’s depth."
+            },
+            {
+              "id": "topic-36-3",
+              "title": "Preserve meaningful groups",
+              "body": "Prefer categories people understand over an artificially flat or deep structure. Check information scent along the whole route, not just at the first level."
+            },
+            {
+              "id": "topic-36-4",
+              "title": "Worked example",
+              "body": "One design lists 40 Cedar classes at the top. Another hides Pottery below Activities / Personal development / Creative skills / Arts. A middle option exposes Courses, then Arts, with course links and filters."
+            },
+            {
+              "id": "topic-36-5",
+              "title": "Try it in your notes",
+              "body": "Take twelve pieces of content and create a broad version and a deeper version. Choose three tasks, then identify where the visitor must make an uncertain decision."
+            },
+            {
+              "id": "topic-36-6",
+              "title": "Review your answer",
+              "body": "Your explanation should identify a concrete ambiguous label or overcrowded list. “Fewer clicks is always better” does not justify the choice. Keep the candidate structures for a later tree test."
+            },
+            {
+              "id": "topic-36-7",
+              "title": "Read the original",
+              "body": "[Flat vs. Deep Website Hierarchies](https://www.nngroup.com/articles/flat-vs-deep-hierarchy/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-36"
+          ],
+          "guideOrder": 7
+        },
+        {
+          "id": "topic-37",
+          "type": "slides",
+          "title": "Audit common architecture failures",
+          "slides": [
+            {
+              "id": "topic-37-1",
+              "title": "Check the structure",
+              "body": "Look for absent organisation, disconnected search, missing category landing pages, excessive cross-listing and isolated subsites. These failures prevent people building a useful mental model."
+            },
+            {
+              "id": "topic-37-2",
+              "title": "Check navigation behaviour",
+              "body": "Inspect hidden choices, hard-to-control menus, inconsistency, competing navigation mechanisms and invented labels. Structure and controls need to support the same understanding."
+            },
+            {
+              "id": "topic-37-3",
+              "title": "Prioritise by consequence",
+              "body": "An audit identifies potential problems; it does not establish how often each occurs. Investigate important tasks and record evidence, impact and a proposed next check."
+            },
+            {
+              "id": "topic-37-4",
+              "title": "Worked example",
+              "body": "Cedar’s bookings open on a separate branded site with no route back. Its courses menu disappears there. A member cannot tell whether “Enrichment” contains their class. These are connected integration, consistency and naming problems."
+            },
+            {
+              "id": "topic-37-5",
+              "title": "Try it in your notes",
+              "body": "Audit your practice site using the ten failure types across the previous two slides. For each issue, record the affected task, observed evidence and a validation method."
+            },
+            {
+              "id": "topic-37-6",
+              "title": "Review your answer",
+              "body": "Example entry: “Cancel booking: members cannot locate the external provider’s help; observed in two sessions; add a consistent support route and retest.” Distinguish observed failures from expert-review hypotheses."
+            },
+            {
+              "id": "topic-37-7",
+              "title": "Read the original",
+              "body": "[Top 10 Information Architecture (IA) Mistakes](https://www.nngroup.com/articles/top-10-ia-mistakes/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-37"
+          ],
+          "guideOrder": 8
+        },
+        {
+          "id": "topic-38",
+          "type": "slides",
+          "title": "Decide menu count, order and activation",
+          "slides": [
+            {
+              "id": "topic-38-1",
+              "title": "Choose a meaningful order",
+              "body": "Order categories using the task and context: importance, frequency, sequence or another meaningful scheme. Alphabetical order works best when people already know the terms they seek."
+            },
+            {
+              "id": "topic-38-2",
+              "title": "Make breadth intentional",
+              "body": "Use enough categories to represent the offering clearly. Broad sites may need more options and a different navigation pattern, rather than compressed or ambiguous labels."
+            },
+            {
+              "id": "topic-38-3",
+              "title": "Provide alternatives to hover",
+              "body": "A hover menu needs usable touch and keyboard access. Do not make essential destinations depend on a pointer interaction that some people cannot perform."
+            },
+            {
+              "id": "topic-38-4",
+              "title": "Worked example",
+              "body": "Cedar puts Book a class before its corporate history because booking is a common task. Its full tutor directory is alphabetical because visitors often know a tutor’s name. The same site uses different schemes for different purposes."
+            },
+            {
+              "id": "topic-38-5",
+              "title": "Try it in your notes",
+              "body": "Choose an ordering scheme for courses, tutor names and booking steps. Explain why one universal ordering scheme would be unhelpful."
+            },
+            {
+              "id": "topic-38-6",
+              "title": "Review your answer",
+              "body": "Subject groups can organise courses, alphabetical names can organise tutors, and chronological steps can organise booking. These choices still require recognisable labels and usable access on touch and keyboard."
+            },
+            {
+              "id": "topic-38-7",
+              "title": "Read the original",
+              "body": "[Top 3 IA Questions about Navigation Menus](https://www.nngroup.com/articles/ia-questions-navigation-menus/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-38"
+          ],
+          "guideOrder": 9
+        },
+        {
+          "id": "topic-39",
+          "type": "slides",
+          "title": "Replace the three-click rule with evidence",
+          "slides": [
+            {
+              "id": "topic-39-1",
+              "title": "Avoid arbitrary limits",
+              "body": "There is no universal three-click threshold for successful navigation. Click count ignores comprehension, waiting, errors and the complexity of the task."
+            },
+            {
+              "id": "topic-39-2",
+              "title": "Inspect effort between clicks",
+              "body": "A short route can still require scanning a huge list. A longer route can feel straightforward when each choice has a clear purpose and provides orientation."
+            },
+            {
+              "id": "topic-39-3",
+              "title": "Choose useful measures",
+              "body": "Combine task success with time, mistakes, backtracking and observed confusion. Reduce unnecessary work without flattening meaningful structure just to meet a number."
+            },
+            {
+              "id": "topic-39-4",
+              "title": "Worked example",
+              "body": "Version A reaches a Cedar refund policy in two clicks through a page of 120 links. Version B takes four clear steps through Booking help and Cancellations. Counting steps alone cannot identify the better experience."
+            },
+            {
+              "id": "topic-39-5",
+              "title": "Try it in your notes",
+              "body": "Write a small evaluation plan comparing the two routes. Include a success definition and at least two effort measures."
+            },
+            {
+              "id": "topic-39-6",
+              "title": "Review your answer",
+              "body": "Define success as finding the correct refund conditions and identifying the applicable deadline. Record time and wrong turns, then ask what was confusing. Keep task wording and content consistent across versions."
+            },
+            {
+              "id": "topic-39-7",
+              "title": "Read the original",
+              "body": "[The 3-Click Rule for Navigation Is False](https://www.nngroup.com/articles/3-click-rule/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-39"
+          ],
+          "guideOrder": 10
+        },
+        {
+          "id": "topic-40",
+          "type": "slides",
+          "title": "Use polyhierarchy for real ambiguity",
+          "slides": [
+            {
+              "id": "topic-40-1",
+              "title": "Understand multiple parents",
+              "body": "Polyhierarchy lets an item belong to more than one category. It can support people who reasonably expect the same content in different places."
+            },
+            {
+              "id": "topic-40-2",
+              "title": "Keep one maintained item",
+              "body": "Multiple routes do not require duplicate content pages. Use a stable canonical record and link it from each justified category to avoid conflicting versions."
+            },
+            {
+              "id": "topic-40-3",
+              "title": "Limit cross-listing",
+              "body": "Listing everything everywhere weakens categories and can confuse location cues. Use research to justify alternate routes and define a consistent breadcrumb policy."
+            },
+            {
+              "id": "topic-40-4",
+              "title": "Worked example",
+              "body": "Cedar’s family swimming class is relevant under Swimming and Family activities. Both links can open the same course page. Two independently edited pages could disagree about age limits or fees."
+            },
+            {
+              "id": "topic-40-5",
+              "title": "Try it in your notes",
+              "body": "Identify one item that genuinely belongs under two Cedar categories. Explain who benefits, how you would test the routes and how the item would be maintained."
+            },
+            {
+              "id": "topic-40-6",
+              "title": "Review your answer",
+              "body": "A reasonable proposal uses observed expectations, one content record and explicit category relationships. Do not add a second category merely because it is technically possible; inspect whether people actually look there."
+            },
+            {
+              "id": "topic-40-7",
+              "title": "Read the original",
+              "body": "[Polyhierarchies Improve Findability for Ambiguous IA Categories](https://www.nngroup.com/articles/polyhierarchy/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-40"
+          ],
+          "guideOrder": 11
+        },
+        {
+          "id": "topic-41",
+          "type": "slides",
+          "title": "Turn cross-listing into an implementation rule",
+          "slides": [
+            {
+              "id": "topic-41-1",
+              "title": "Connect the concept to a system",
+              "body": "A polyhierarchical item has more than one parent relationship. Plan the data and interface together so alternate routes remain understandable."
+            },
+            {
+              "id": "topic-41-2",
+              "title": "Preserve orientation",
+              "body": "Decide whether breadcrumbs follow a canonical path or an appropriate contextual path. Keep the decision consistent and avoid presenting a visitor’s click history as the site hierarchy."
+            },
+            {
+              "id": "topic-41-3",
+              "title": "Review the extra relationships",
+              "body": "Every cross-listing adds maintenance work. Check alternate routes after content moves, and remove relationships that no longer support a useful expectation."
+            },
+            {
+              "id": "topic-41-4",
+              "title": "Worked example",
+              "body": "Record COURSE-17 once, with parent relationships to Swimming and Family activities. Its canonical URL stays unchanged. A navigation specification states how each entry route will display location context."
+            },
+            {
+              "id": "topic-41-5",
+              "title": "Try it in your notes",
+              "body": "Draft a three-row specification: content identifier, allowed parent categories and breadcrumb policy. Add one edge case involving entry from an external search engine."
+            },
+            {
+              "id": "topic-41-6",
+              "title": "Review your answer",
+              "body": "For direct entry, a stable canonical breadcrumb can provide context even without a previous category click. Other policies can work, but must avoid misleading visitors and be tested. Multiple parents are not permission to duplicate inconsistent facts."
+            },
+            {
+              "id": "topic-41-7",
+              "title": "Read the original",
+              "body": "[Polyhierarchy in Information Architecture (Video)](https://www.nngroup.com/videos/polyhierarchy-information-architecture/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-41"
+          ],
+          "guideOrder": 12
+        },
+        {
+          "id": "topic-42",
+          "type": "slides",
+          "title": "Handle category outliers without overengineering",
+          "slides": [
+            {
+              "id": "topic-42-1",
+              "title": "Recognise imperfect membership",
+              "body": "People’s categories can tolerate a few loosely fitting items. An outlier does not automatically require a new top-level category or an empty-looking subcategory."
+            },
+            {
+              "id": "topic-42-2",
+              "title": "Compare the alternatives",
+              "body": "Keep the item in a broader group, introduce a useful subcategory, use metadata for alternate discovery, or cross-list where expectations justify it."
+            },
+            {
+              "id": "topic-42-3",
+              "title": "Consider scale and evidence",
+              "body": "The amount of content, distinct user needs and expected growth affect the choice. A theoretically pure classification can be harder to use than a practical one."
+            },
+            {
+              "id": "topic-42-4",
+              "title": "Worked example",
+              "body": "Cedar has twenty regular courses and one equipment-loan guide. A separate “Learning enablement solutions” section adds an unfamiliar category. A recognisable Equipment loans link within course support may fit better."
+            },
+            {
+              "id": "topic-42-5",
+              "title": "Try it in your notes",
+              "body": "Choose a location for a single bursary guide. Compare a new Fees and funding subcategory with a direct link from course pages. What future change would alter your decision?"
+            },
+            {
+              "id": "topic-42-6",
+              "title": "Review your answer",
+              "body": "If funding content grows into several distinct tasks, a dedicated category may become useful. With one guide, a clear support location and contextual links could suffice. Record the hypothesis and test finding the guide."
+            },
+            {
+              "id": "topic-42-7",
+              "title": "Read the original",
+              "body": "[How to Handle Category Outliers in Your IA](https://www.nngroup.com/articles/ia-category-outliers/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-42"
+          ],
+          "guideOrder": 13
+        },
+        {
+          "id": "structure-check",
+          "type": "quiz",
+          "title": "Check: Structure and organisation",
+          "skill": "Check: Structure and organisation",
+          "questions": [
+            {
+              "id": "structure-check-q1",
+              "prompt": "Cedar changes a page’s parent category. What changed?",
+              "options": [
+                "The information architecture",
+                "Only its colour palette",
+                "Only its animation"
+              ],
+              "answer": 0,
+              "explanation": "Parent relationships are part of the structure."
+            },
+            {
+              "id": "structure-check-q2",
+              "prompt": "A four-step route is clearer than a two-step list of 200 links. What should you do?",
+              "options": [
+                "Reject it because four clicks is forbidden",
+                "Hide links until only seven remain",
+                "Evaluate success and effort with tasks"
+              ],
+              "answer": 2,
+              "explanation": "Click count alone ignores scanning and decision effort."
+            },
+            {
+              "id": "structure-check-q3",
+              "prompt": "Two audiences reasonably seek the same guide in different categories. What is a defensible option?",
+              "options": [
+                "List every page under every category",
+                "Research-supported cross-listing of one maintained item",
+                "Copy the guide into two independent pages"
+              ],
+              "answer": 1,
+              "explanation": "Polyhierarchy can support genuine alternate expectations without duplicate content."
+            },
+            {
+              "id": "structure-check-q4",
+              "prompt": "One outlier loosely fits a large category. What should happen next?",
+              "options": [
+                "Compare practical locations and test expectations",
+                "Always create a new top-level section",
+                "Delete the item to preserve mathematical purity"
+              ],
+              "answer": 0,
+              "explanation": "Small numbers of outliers do not automatically require new categories."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "labels",
+      "type": "section",
+      "title": "3 Labels and taxonomy",
+      "children": [
+        {
+          "id": "topic-43",
+          "type": "slides",
+          "title": "Write labels with the four Ss",
+          "slides": [
+            {
+              "id": "topic-43-1",
+              "title": "Make labels specific and sincere",
+              "body": "Specific labels identify the destination. Sincere labels set expectations the destination fulfils. Avoid promises that the content or function cannot meet."
+            },
+            {
+              "id": "topic-43-2",
+              "title": "Make labels substantial",
+              "body": "A label should carry enough meaning to be understood when scanned apart from surrounding text. Preserve distinguishing words instead of relying entirely on nearby copy."
+            },
+            {
+              "id": "topic-43-3",
+              "title": "Keep labels succinct",
+              "body": "Remove words that add no useful distinction. Brevity supports scanning only while the subject, action and important conditions remain understandable."
+            },
+            {
+              "id": "topic-43-4",
+              "title": "Worked example",
+              "body": "“Free courses” is inaccurate when only eligible members receive a waiver. “Course fee support” is more sincere. A short description can explain eligibility before the visitor commits to applying."
+            },
+            {
+              "id": "topic-43-5",
+              "title": "Try it in your notes",
+              "body": "Evaluate “Discover”, “Everything about our exciting programmes” and “Evening language courses” against all four Ss. Rewrite the first two for a specific destination."
+            },
+            {
+              "id": "topic-43-6",
+              "title": "Review your answer",
+              "body": "For a language course directory, “Evening language courses” names subject and schedule without a vague invitation. For an application page, “Apply for course fee support” states the actual action. Confirm each label against its destination."
+            },
+            {
+              "id": "topic-43-7",
+              "title": "Read the original",
+              "body": "[Better Labels for Website Links: the 4 Ss for Encouraging clicks (Video)](https://www.nngroup.com/videos/better-link-labels/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-43"
+          ],
+          "guideOrder": 14
+        },
+        {
+          "id": "topic-44",
+          "type": "slides",
+          "title": "Replace ambiguous Learn more links",
+          "slides": [
+            {
+              "id": "topic-44-1",
+              "title": "Identify the destination",
+              "body": "A standalone “Learn more” label gives little evidence about the next page. Repetition makes scanning and distinguishing links harder, including for assistive technology users."
+            },
+            {
+              "id": "topic-44-2",
+              "title": "Choose meaningful linked text",
+              "body": "Link an informative phrase in the surrounding sentence or write a short destination label. Include format or external-service details when they affect the decision."
+            },
+            {
+              "id": "topic-44-3",
+              "title": "Preserve relevant context",
+              "body": "Descriptive links do not require long labels everywhere. A clear subject and destination can be concise; supporting text can explain conditions without replacing the link’s meaning."
+            },
+            {
+              "id": "topic-44-4",
+              "title": "Worked example",
+              "body": "Three Cedar cards all end “Learn more”. Replace them with “Compare membership prices”, “Check swimming age limits” and “Find accessible facilities”. Each now predicts a different destination."
+            },
+            {
+              "id": "topic-44-5",
+              "title": "Try it in your notes",
+              "body": "Write links for a fee table, a cancellation form on another provider’s site and an accessibility policy PDF. Decide what context belongs beside each link."
+            },
+            {
+              "id": "topic-44-6",
+              "title": "Review your answer",
+              "body": "Possible labels: “Membership prices”, “Cancel a booking on Cedar Bookings” and “Accessibility policy (PDF)”. Add file size only if known and useful. Do not claim that a link submits a cancellation when it merely opens a form."
+            },
+            {
+              "id": "topic-44-7",
+              "title": "Read the original",
+              "body": "[“Learn More” Links: You Can Do Better](https://www.nngroup.com/articles/learn-more-links/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-44"
+          ],
+          "guideOrder": 15
+        },
+        {
+          "id": "topic-45",
+          "type": "slides",
+          "title": "Avoid three patterns of weak naming",
+          "slides": [
+            {
+              "id": "topic-45-1",
+              "title": "Replace vague invitations",
+              "body": "Navigation labels such as “Explore” or “Connect” often conceal the subject. Choose words that help people predict the content or function."
+            },
+            {
+              "id": "topic-45-2",
+              "title": "Do not force verbal symmetry",
+              "body": "Making every menu item a verb or the same grammatical shape can remove useful meaning. Clarity matters more than decorative consistency."
+            },
+            {
+              "id": "topic-45-3",
+              "title": "Keep personality out of the way",
+              "body": "Conversational labels can be friendly yet ambiguous. Use natural language where it helps, while retaining the concrete nouns people need for finding information."
+            },
+            {
+              "id": "topic-45-4",
+              "title": "Worked example",
+              "body": "“Discover / Thrive / Belong” could mean courses, wellbeing services or membership. “Courses / Wellbeing support / Membership” gives visitors more useful distinctions without preventing a welcoming tone elsewhere."
+            },
+            {
+              "id": "topic-45-5",
+              "title": "Try it in your notes",
+              "body": "Rewrite Cedar’s menu “Get inspired / Get connected / Get going”. State what content each replacement represents before choosing the wording."
+            },
+            {
+              "id": "topic-45-6",
+              "title": "Review your answer",
+              "body": "Possible replacements are Events, Contact and Book a class, if those are the actual destinations. A naming exercise cannot resolve undefined categories: establish what each group contains first."
+            },
+            {
+              "id": "topic-45-7",
+              "title": "Read the original",
+              "body": "[3 Common IA Mistakes (that Are All Due to Low Information Scent)](https://www.nngroup.com/articles/3-ia-mistakes/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-45"
+          ],
+          "guideOrder": 16
+        },
+        {
+          "id": "topic-46",
+          "type": "slides",
+          "title": "Build a controlled taxonomy",
+          "slides": [
+            {
+              "id": "topic-46-1",
+              "title": "Control classification terms",
+              "body": "A taxonomy defines an approved hierarchical vocabulary for classifying content. It differs from free-form tags and from the menu visitors see."
+            },
+            {
+              "id": "topic-46-2",
+              "title": "Relate the models",
+              "body": "A content model defines types and fields. The IA defines the information space. Taxonomy supplies classification rules; navigation uses selected relationships and labels. Thesauri add term relationships; ontologies model richer domain relationships."
+            },
+            {
+              "id": "topic-46-3",
+              "title": "Build and govern the vocabulary",
+              "body": "Inventory terms, involve content experts and users, define preferred terms and scope, test retrieval and assign ownership. Prevent uncontrolled additions from producing duplicate or conflicting categories."
+            },
+            {
+              "id": "topic-46-4",
+              "title": "Worked example",
+              "body": "Cedar’s subject vocabulary permits Computing, Languages and Arts. Editors cannot independently add “IT”, “Tech skills” and “Digital” as competing subjects. Search synonyms can still map those expressions to Computing."
+            },
+            {
+              "id": "topic-46-5",
+              "title": "Try it in your notes",
+              "body": "Create a small subject taxonomy with two levels. For one term, write a definition, inclusion/exclusion rule, synonym and owner. Classify three real content items."
+            },
+            {
+              "id": "topic-46-6",
+              "title": "Review your answer",
+              "body": "Example: Computing includes learning to use or program digital systems, excludes equipment hire, has search synonym IT, and is owned by the course editor. If editors disagree, revise scope notes and test retrieval before expanding the vocabulary."
+            },
+            {
+              "id": "topic-46-7",
+              "title": "Read the original",
+              "body": "[Taxonomy 101: Definition, Best Practices, and How It Complements Other IA Work](https://www.nngroup.com/articles/taxonomy-101/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-46"
+          ],
+          "guideOrder": 17
+        },
+        {
+          "id": "labels-check",
+          "type": "quiz",
+          "title": "Check: Labels and taxonomy",
+          "skill": "Check: Labels and taxonomy",
+          "questions": [
+            {
+              "id": "labels-check-q1",
+              "prompt": "Which label best predicts a fee-comparison destination?",
+              "options": [
+                "Compare membership prices",
+                "Discover more",
+                "Begin your journey"
+              ],
+              "answer": 0,
+              "explanation": "The label names the subject and purpose."
+            },
+            {
+              "id": "labels-check-q2",
+              "prompt": "Editors create IT, Digital and Computing as overlapping tags. What is missing?",
+              "options": [
+                "More animated menu icons",
+                "A shorter domain name",
+                "Vocabulary rules and ownership"
+              ],
+              "answer": 2,
+              "explanation": "Controlled terms and scope definitions prevent uncontrolled classification."
+            },
+            {
+              "id": "labels-check-q3",
+              "prompt": "A Free courses label opens a page of conditional discounts. What needs checking?",
+              "options": [
+                "Whether every word begins with a capital",
+                "Whether the label sets truthful expectations",
+                "Whether it has enough enthusiasm"
+              ],
+              "answer": 1,
+              "explanation": "Sincere labels must match the destination and its conditions."
+            },
+            {
+              "id": "labels-check-q4",
+              "prompt": "Must every navigation category begin with a verb?",
+              "options": [
+                "No; use the clearest meaningful labels",
+                "Yes; verbs guarantee conversion",
+                "Only on phone screens"
+              ],
+              "answer": 0,
+              "explanation": "Forced grammatical symmetry can weaken information scent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cards",
+      "type": "section",
+      "title": "4 Card sorting",
+      "children": [
+        {
+          "id": "topic-49",
+          "type": "slides",
+          "title": "Run a useful card sort",
+          "slides": [
+            {
+              "id": "topic-49-1",
+              "title": "Discover how people group content",
+              "body": "Card sorting asks participants to organise representative topics. It reveals grouping expectations and vocabulary; it does not directly prove that people can find content in the resulting interface."
+            },
+            {
+              "id": "topic-49-2",
+              "title": "Prepare and pilot",
+              "body": "Define the research question, recruit relevant participants and create understandable, representative cards. Pilot the instructions and workload. The current NN/g article suggests roughly 30–50 cards; adjust scope to the study rather than treating this as a requirement."
+            },
+            {
+              "id": "topic-49-3",
+              "title": "Run and interpret",
+              "body": "Let people sort without teaching your preferred structure. Capture their labels, uncertainty and reasoning. Review agreement, differences and outliers alongside content constraints before proposing an IA."
+            },
+            {
+              "id": "topic-49-4",
+              "title": "Worked example",
+              "body": "Cedar includes course prices, joining instructions, venue access, refunds and tutor profiles. An open sort reveals that some participants group refunds with bookings rather than with membership. That expectation needs investigation, not automatic acceptance."
+            },
+            {
+              "id": "topic-49-5",
+              "title": "Try it in your notes",
+              "body": "Create twelve practice cards from Cedar’s content. Ask someone to group and label them without suggesting categories. Record one surprising grouping and their explanation."
+            },
+            {
+              "id": "topic-49-6",
+              "title": "Review your answer",
+              "body": "Your twelve-card activity is a learning exercise, not a validated research sample. Keep the original grouping and the participant’s words. Propose a structural change and a later tree-test task to check it."
+            },
+            {
+              "id": "topic-49-7",
+              "title": "Read the original",
+              "body": "[Card Sorting: Uncover Users' Mental Models](https://www.nngroup.com/articles/card-sorting-definition/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-49"
+          ],
+          "guideOrder": 18
+        },
+        {
+          "id": "topic-50",
+          "type": "slides",
+          "title": "Choose open, closed or hybrid sorting",
+          "slides": [
+            {
+              "id": "topic-50-1",
+              "title": "Use open sorting to explore",
+              "body": "In an open sort, participants create and name groups. Use it when you need to learn possible organisational schemes and language rather than evaluate only your existing categories."
+            },
+            {
+              "id": "topic-50-2",
+              "title": "Use closed sorting to examine a proposal",
+              "body": "A closed sort supplies categories and asks participants to place cards within them. It helps investigate whether items and labels fit people’s expectations, but does not test an entire navigation journey."
+            },
+            {
+              "id": "topic-50-3",
+              "title": "Make hybrid rules explicit",
+              "body": "A hybrid approach permits predefined groups and additional groups. Explain what participants may change, and distinguish evidence about existing categories from new proposals."
+            },
+            {
+              "id": "topic-50-4",
+              "title": "Worked example",
+              "body": "Cedar has not agreed on its course-support categories, so an open sort can explore expectations. Later, a closed sort can examine whether cancellation, payment and preparation topics fit proposed category names."
+            },
+            {
+              "id": "topic-50-5",
+              "title": "Try it in your notes",
+              "body": "Choose a sorting approach for a new site, a disputed label and an established taxonomy with possible gaps. Explain what you would still need to test afterwards."
+            },
+            {
+              "id": "topic-50-6",
+              "title": "Review your answer",
+              "body": "Open sorting can explore a new structure; closed sorting can investigate a proposal; hybrid sorting can reveal gaps while preserving a starting scheme. None establishes visual menu usability. Use task-based evaluation for finding and interaction."
+            },
+            {
+              "id": "topic-50-7",
+              "title": "Read the original",
+              "body": "[Open vs. Closed Card Sorting (Video)](https://www.nngroup.com/videos/open-vs-closed-card-sorting/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-50"
+          ],
+          "guideOrder": 19
+        },
+        {
+          "id": "topic-51",
+          "type": "slides",
+          "title": "Prevent keyword matching from masquerading as insight",
+          "slides": [
+            {
+              "id": "topic-51-1",
+              "title": "Test concepts, not repeated words",
+              "body": "Participants may group cards by matching words rather than by understanding the content. Repeated department names or prefixes can manufacture agreement."
+            },
+            {
+              "id": "topic-51-2",
+              "title": "Write neutral descriptions",
+              "body": "Use clear, distinct wording that describes each item’s meaning. Remove accidental verbal patterns without making the cards cryptic or changing what they represent."
+            },
+            {
+              "id": "topic-51-3",
+              "title": "Inspect the reasoning",
+              "body": "Pilot cards for comprehension and ask why people grouped them. Revise ambiguous wording before interpreting large amounts of sorting data."
+            },
+            {
+              "id": "topic-51-4",
+              "title": "Worked example",
+              "body": "“Member prices”, “Member conduct” and “Member stories” share a prefix but support different needs. Cedar can describe them as “Membership fees”, “Rules for using facilities” and “Experiences shared by members” to reduce superficial matching."
+            },
+            {
+              "id": "topic-51-5",
+              "title": "Try it in your notes",
+              "body": "Rewrite six cards that begin with a repeated organisational term. Ask a participant to explain one group. Could the new wording still be steering the answer?"
+            },
+            {
+              "id": "topic-51-6",
+              "title": "Review your answer",
+              "body": "Removing a prefix alone is insufficient if the replacement adds an obvious category cue. Check equivalent detail and neutral phrasing across cards. Record whether the participant discusses meaning or simply repeats a shared word."
+            },
+            {
+              "id": "topic-51-7",
+              "title": "Read the original",
+              "body": "[Card Sorting: Pushing Users Beyond Terminology Matches](https://www.nngroup.com/articles/card-sorting-terminology-matches/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-51"
+          ],
+          "guideOrder": 20
+        },
+        {
+          "id": "topic-52",
+          "type": "slides",
+          "title": "Plan the participant sample",
+          "slides": [
+            {
+              "id": "topic-52-1",
+              "title": "Treat sample size as a decision",
+              "body": "NN/g’s older card-sorting article recommends about 15 participants for many projects and more for larger studies. This is contextual guidance from limited evidence, not a guarantee or a universal minimum for every research question."
+            },
+            {
+              "id": "topic-52-2",
+              "title": "Represent relevant differences",
+              "body": "Recruit people who reflect the intended users and meaningful knowledge differences. A large convenience sample cannot repair recruitment that excludes an important audience."
+            },
+            {
+              "id": "topic-52-3",
+              "title": "Separate exploration from measurement",
+              "body": "Small moderated studies can reveal reasons and issues. Stable quantitative comparisons need a suitable sample and analysis plan. Explain uncertainty and avoid presenting a few responses as population facts."
+            },
+            {
+              "id": "topic-52-4",
+              "title": "Worked example",
+              "body": "A Cedar study with fifteen staff members may reveal staff vocabulary but miss newcomer expectations. Recruiting new and returning members addresses a different problem from merely increasing the total number."
+            },
+            {
+              "id": "topic-52-5",
+              "title": "Try it in your notes",
+              "body": "Write a recruitment plan naming the audience, important differences, recruitment route, available sample and limitations. What would you do if only five people were available?"
+            },
+            {
+              "id": "topic-52-6",
+              "title": "Review your answer",
+              "body": "Use a small sample for exploratory learning, retain disagreements and plan follow-up. Do not report “80% of all members prefer this” from four of five participants. Distinguish a pilot from a reliable estimate."
+            },
+            {
+              "id": "topic-52-7",
+              "title": "Read the original",
+              "body": "[Card Sorting: How Many Users to Test](https://www.nngroup.com/articles/card-sorting-how-many-users-to-test/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-52"
+          ],
+          "guideOrder": 21
+        },
+        {
+          "id": "topic-53",
+          "type": "slides",
+          "title": "Reduce sampling and material bias",
+          "slides": [
+            {
+              "id": "topic-53-1",
+              "title": "Represent the content fairly",
+              "body": "The cards you select shape the apparent categories. Overrepresenting one subject can make it appear more important or more subdivided than the real collection."
+            },
+            {
+              "id": "topic-53-2",
+              "title": "Check selection rules",
+              "body": "Define the inventory and how cards represent it. Include important tasks, less common items and likely outliers without loading the study to support a stakeholder’s desired answer."
+            },
+            {
+              "id": "topic-53-3",
+              "title": "Pilot the whole experience",
+              "body": "Review wording, card order, instructions and facilitation. Avoid coaching, approval signals and category hints. Record exclusions so others understand the study’s limits."
+            },
+            {
+              "id": "topic-53-4",
+              "title": "Worked example",
+              "body": "Cedar selects twenty arts cards but only one swimming card, although both represent similar shares of the offering. The results may split Arts into many groups while concealing distinctions within Swimming."
+            },
+            {
+              "id": "topic-53-5",
+              "title": "Try it in your notes",
+              "body": "Audit your practice card set. List included content types, excluded topics and the reason for each. Identify one imbalance that could change the result."
+            },
+            {
+              "id": "topic-53-6",
+              "title": "Review your answer",
+              "body": "A defensible selection reflects the research question and content space. Proportionate sampling is a starting point, not a rule that rare but critical tasks must disappear. Document deliberate oversampling and analyse it accordingly."
+            },
+            {
+              "id": "topic-53-7",
+              "title": "Read the original",
+              "body": "[How to Avoid Bias in Card Sorting (Video)](https://www.nngroup.com/videos/bias-card-sorting/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-53"
+          ],
+          "guideOrder": 22
+        },
+        {
+          "id": "topic-54",
+          "type": "slides",
+          "title": "Interpret clusters and dendrograms",
+          "slides": [
+            {
+              "id": "topic-54-1",
+              "title": "Read a cluster as evidence",
+              "body": "A dendrogram visualises how items cluster under an analysis method. It summarises patterns of grouping; it is not an automatically correct sitemap."
+            },
+            {
+              "id": "topic-54-2",
+              "title": "Compare candidate boundaries",
+              "body": "Inspect which items consistently belong together and which move between groups. The merge scale and algorithm depend on the tool, so read its definitions before interpreting a cut or distance."
+            },
+            {
+              "id": "topic-54-3",
+              "title": "Combine numbers with meaning",
+              "body": "Review participant labels, comments, outliers and content needs. Different defensible cuts can produce different numbers of categories. Validate the proposed structure through finding tasks."
+            },
+            {
+              "id": "topic-54-4",
+              "title": "Worked example",
+              "body": "In a fictional Cedar sort, Prices and Concessions are grouped together by 18 of 20 participants; Refunds joins them in only 8. The stronger pair suggests a Fees cluster, while Refunds needs further investigation."
+            },
+            {
+              "id": "topic-54-5",
+              "title": "Try it in your notes",
+              "body": "Use this small similarity table: A with B: 90%; A with C: 35%; B with C: 40%. Propose a group and one uncertainty. What information is missing?"
+            },
+            {
+              "id": "topic-54-6",
+              "title": "Review your answer",
+              "body": "A and B are plausible companions. The table alone does not name the group or explain C’s role. You need item meanings, sample details, other relationships and participant reasoning. A visual cluster does not eliminate design judgement."
+            },
+            {
+              "id": "topic-54-7",
+              "title": "Read the original",
+              "body": "[How to Interpret Dendrograms from Card Sorting to Improve Information Architecture (Video)](https://www.nngroup.com/videos/ia-dendrogram/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-54"
+          ],
+          "guideOrder": 23
+        },
+        {
+          "id": "cards-check",
+          "type": "quiz",
+          "title": "Check: Card sorting",
+          "skill": "Check: Card sorting",
+          "questions": [
+            {
+              "id": "cards-check-q1",
+              "prompt": "You need to explore possible category names. Choose:",
+              "options": [
+                "A click count of the existing menu",
+                "Open card sorting",
+                "A closed sort with unchangeable department names"
+              ],
+              "answer": 1,
+              "explanation": "An open sort lets participants group and name content."
+            },
+            {
+              "id": "cards-check-q2",
+              "prompt": "Cards all begin with Member. What risk arises?",
+              "options": [
+                "Keyword matching may substitute for conceptual grouping",
+                "Every participant will necessarily fail",
+                "The vocabulary is proven correct"
+              ],
+              "answer": 0,
+              "explanation": "Repeated wording can manufacture agreement."
+            },
+            {
+              "id": "cards-check-q3",
+              "prompt": "Twenty cards cover arts and one covers swimming despite similar collections. Investigate:",
+              "options": [
+                "Whether the interface needs more shadows",
+                "Whether all participants used identical devices",
+                "Whether selection bias distorts the groupings"
+              ],
+              "answer": 2,
+              "explanation": "Card selection shapes the patterns that can emerge."
+            },
+            {
+              "id": "cards-check-q4",
+              "prompt": "A dendrogram displays a strong cluster. What follows?",
+              "options": [
+                "Ignore all participant comments",
+                "Interpret its meaning and test a proposed structure",
+                "Copy it directly into production as the final sitemap"
+              ],
+              "answer": 1,
+              "explanation": "Clusters summarise data and require contextual interpretation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trees",
+      "type": "section",
+      "title": "5 Tree testing and diagnosis",
+      "children": [
+        {
+          "id": "topic-55",
+          "type": "slides",
+          "title": "Use tree testing to check findability",
+          "slides": [
+            {
+              "id": "topic-55-1",
+              "title": "Evaluate the proposed hierarchy",
+              "body": "A tree test presents a stripped-down category structure and asks people where they would find something. It isolates naming and grouping from visual interface design."
+            },
+            {
+              "id": "topic-55-2",
+              "title": "Choose the question carefully",
+              "body": "Use tasks that expose disputed categories and important destinations. Define acceptable locations in advance, including justified alternate paths."
+            },
+            {
+              "id": "topic-55-3",
+              "title": "Know what remains untested",
+              "body": "A good tree result does not establish that a real menu is visible, operable or accessible. Test the interface separately after testing the structure."
+            },
+            {
+              "id": "topic-55-4",
+              "title": "Worked example",
+              "body": "Cedar asks where a member would find the rules for recovering a payment after cancelling a class. The participant chooses among labels without seeing promotional cards, page styling or search."
+            },
+            {
+              "id": "topic-55-5",
+              "title": "Try it in your notes",
+              "body": "Convert one uncertainty from your card sort into a tree-test task. Describe the acceptable destination without copying the category name into the task."
+            },
+            {
+              "id": "topic-55-6",
+              "title": "Review your answer",
+              "body": "“You cannot attend a booked class. Where would you check whether your payment can be returned?” avoids directly saying “Refund policy”. Keep the scenario short and use language participants understand."
+            },
+            {
+              "id": "topic-55-7",
+              "title": "Read the original",
+              "body": "[Tree Testing to Evaluate Information Architecture Categories (Video)](https://www.nngroup.com/videos/tree-testing/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-55"
+          ],
+          "guideOrder": 24
+        },
+        {
+          "id": "topic-56",
+          "type": "slides",
+          "title": "Prepare, pilot and run a tree test",
+          "slides": [
+            {
+              "id": "topic-56-1",
+              "title": "Define the tree and answers",
+              "body": "Include relevant categories down to the task destinations. Decide what counts as success before collecting results. A shallow tree can hide lower-level problems."
+            },
+            {
+              "id": "topic-56-2",
+              "title": "Write unbiased tasks",
+              "body": "Select common tasks, important risks and areas of disagreement. Avoid giving away category labels or burying the goal in a long story. Pilot the tasks for comprehension."
+            },
+            {
+              "id": "topic-56-3",
+              "title": "Choose the study mode",
+              "body": "Moderated sessions can reveal reasoning; unmoderated studies can collect broader behavioural data. Decide recruitment, sample, task order, data exclusions and reporting before launch."
+            },
+            {
+              "id": "topic-56-4",
+              "title": "Worked example",
+              "body": "A Cedar test includes booking, cancellation, accessibility support and venue hire. Each task has an expected destination and accepted alternate routes. A pilot discovers that “concession” is misunderstood, so the task wording is revised."
+            },
+            {
+              "id": "topic-56-5",
+              "title": "Try it in your notes",
+              "body": "Write a mini protocol: research question, tree version, participants, three tasks, accepted destinations and exclusion rules. Pilot one task without explaining the intended answer."
+            },
+            {
+              "id": "topic-56-6",
+              "title": "Review your answer",
+              "body": "A complete protocol makes your decisions reproducible. Record wording changes after the pilot. Avoid changing success criteria after seeing results merely to improve the score. Follow with interface testing once the hierarchy is promising."
+            },
+            {
+              "id": "topic-56-7",
+              "title": "Read the original",
+              "body": "[Tree Testing: Evaluate Menu Labels and Categories](https://www.nngroup.com/articles/tree-testing/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-56"
+          ],
+          "guideOrder": 25
+        },
+        {
+          "id": "topic-57",
+          "type": "slides",
+          "title": "Turn tree-test results into changes",
+          "slides": [
+            {
+              "id": "topic-57-1",
+              "title": "Separate success from effort",
+              "body": "Success records acceptable final destinations. Directness concerns the route and backtracking; time adds another effort measure. A correct final answer can conceal considerable difficulty."
+            },
+            {
+              "id": "topic-57-2",
+              "title": "Inspect pathways",
+              "body": "Weak first choices suggest a top-level expectation problem. Good first choices followed by wrong destinations suggest trouble further down. Examine distributions and accepted alternate paths, not just one overall percentage."
+            },
+            {
+              "id": "topic-57-3",
+              "title": "Compare fairly",
+              "body": "Interpret results by task importance, baseline and uncertainty. Compare equivalent tasks and recruitment. A small numerical difference is not automatically meaningful; quantitative comparisons need an appropriate sample and analysis."
+            },
+            {
+              "id": "topic-57-4",
+              "title": "Worked example",
+              "body": "Fictional data: 20 participants try Cedar cancellation. 14 succeed; 8 succeed directly; 6 succeed after backtracking; 6 fail. That is 70% success and 40% direct success using all participants as denominator. State that denominator explicitly."
+            },
+            {
+              "id": "topic-57-5",
+              "title": "Try it in your notes",
+              "body": "Half the participants start under Membership, but refunds live under Bookings. Propose two competing explanations and a next test. Do not assume the most popular wrong route must become correct."
+            },
+            {
+              "id": "topic-57-6",
+              "title": "Review your answer",
+              "body": "The top label may be unclear, or visitors may reasonably view refunds as a membership issue. Inspect other task paths, interview evidence and category overlap. Try clearer labels or justified cross-listing, then retest. Tool definitions of directness can differ."
+            },
+            {
+              "id": "topic-57-7",
+              "title": "Read the original",
+              "body": "[Tree Testing Part 2: Interpreting the Results](https://www.nngroup.com/articles/interpreting-tree-test-results/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-57"
+          ],
+          "guideOrder": 26
+        },
+        {
+          "id": "topic-58",
+          "type": "slides",
+          "title": "Diagnose IA problems separately from interface problems",
+          "slides": [
+            {
+              "id": "topic-58-1",
+              "title": "Use four complementary methods",
+              "body": "Tree testing evaluates paths through a hierarchy. Closed sorting examines category fit. Click testing examines selection in a visual design. Usability testing observes a fuller task in context."
+            },
+            {
+              "id": "topic-58-2",
+              "title": "Compare evidence across methods",
+              "body": "If a labelled hierarchy works but the real page fails, investigate visibility and interaction. If both fail, investigate structure and wording as well. Neither pattern proves a cause on its own."
+            },
+            {
+              "id": "topic-58-3",
+              "title": "Choose the smallest useful next study",
+              "body": "Start from an observed task failure and a specific hypothesis. Match the method to the uncertainty rather than running every method automatically."
+            },
+            {
+              "id": "topic-58-4",
+              "title": "Worked example",
+              "body": "Cedar visitors find accessibility information in a text tree but overlook its low-contrast link in the page footer. A visual click test and observed task can examine whether presentation explains the difference."
+            },
+            {
+              "id": "topic-58-5",
+              "title": "Try it in your notes",
+              "body": "Match a method to each question: Do these labels fit the topics? Which visible link looks right? Can someone complete booking? Can they find the destination in a stripped hierarchy?"
+            },
+            {
+              "id": "topic-58-6",
+              "title": "Review your answer",
+              "body": "Use closed sorting, click testing, usability testing and tree testing respectively. Each answers part of the problem. For example, selecting a plausible first link does not establish successful end-to-end booking."
+            },
+            {
+              "id": "topic-58-7",
+              "title": "Read the original",
+              "body": "[Low Findability and Discoverability: Four Testing Methods to Identify the Causes](https://www.nngroup.com/articles/navigation-ia-tests/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-58"
+          ],
+          "guideOrder": 27
+        },
+        {
+          "id": "trees-check",
+          "type": "quiz",
+          "title": "Check: Tree testing and diagnosis",
+          "skill": "Check: Tree testing and diagnosis",
+          "questions": [
+            {
+              "id": "trees-check-q1",
+              "prompt": "A tree task says Find the Refund policy category. What is the concern?",
+              "options": [
+                "Tree tests cannot include policies",
+                "The task gives away the label being evaluated",
+                "The task is too short to be valid"
+              ],
+              "answer": 1,
+              "explanation": "Test the underlying need without unnecessarily priming the category term."
+            },
+            {
+              "id": "trees-check-q2",
+              "prompt": "18 of 20 find the page, but 12 backtrack. What matters?",
+              "options": [
+                "Success hides substantial effort",
+                "The IA is necessarily perfect",
+                "Only total clicks should be reported"
+              ],
+              "answer": 0,
+              "explanation": "Combine success with pathways, directness and time."
+            },
+            {
+              "id": "trees-check-q3",
+              "prompt": "The text hierarchy works but visitors miss the real menu. Next investigate:",
+              "options": [
+                "Only adding more categories",
+                "Only increasing the study’s success threshold",
+                "Visual visibility and interaction as well as remaining IA questions"
+              ],
+              "answer": 2,
+              "explanation": "A tree test isolates structure and does not validate interface visibility."
+            },
+            {
+              "id": "trees-check-q4",
+              "prompt": "A participant selects the correct branch first, then the wrong leaf. Inspect:",
+              "options": [
+                "Only how many top-level categories exist",
+                "Lower-level labels and category boundaries",
+                "Only the homepage logo position"
+              ],
+              "answer": 1,
+              "explanation": "The path suggests where to investigate; it does not establish a cause by itself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "type": "section",
+      "title": "6 Global navigation",
+      "children": [
+        {
+          "id": "topic-59",
+          "type": "slides",
+          "title": "Review menus with the current checklist",
+          "slides": [
+            {
+              "id": "topic-59-1",
+              "title": "Make choices visible",
+              "body": "The study guide names a 15-point checklist; its linked article now contains 17 guidelines. Review visibility, expected placement, contrast and menus that preserve surrounding page context."
+            },
+            {
+              "id": "topic-59-2",
+              "title": "Communicate place and options",
+              "body": "Indicate the current location and relevant neighbouring pages. Use familiar, front-loaded labels, scannable alignment and suitable access to deeper levels. Optional visual cues support rather than replace text."
+            },
+            {
+              "id": "topic-59-3",
+              "title": "Make menus operable",
+              "body": "Provide usable targets, clear submenu signifiers and reliable touch/keyboard alternatives to hover. Avoid cascading fly-outs, unnecessary pointer travel and novelty. Consider access on long pages without obstructing content."
+            },
+            {
+              "id": "topic-59-4",
+              "title": "Worked example",
+              "body": "Cedar’s menu looks elegant but uses pale text, hides all subjects under an icon and closes when the pointer briefly leaves a narrow target. A structural review alone would miss these interaction failures."
+            },
+            {
+              "id": "topic-59-5",
+              "title": "Try it in your notes",
+              "body": "Review your menu under four headings: visibility, location, options and manipulation. Select three high-impact changes and explain the task each would improve."
+            },
+            {
+              "id": "topic-59-6",
+              "title": "Review your answer",
+              "body": "Example: expose Courses on desktop; mark the current course section; open submenus through a keyboard-operable button. Recheck actual tasks after changing the interface. A checklist identifies risks, not a certificate of usability."
+            },
+            {
+              "id": "topic-59-7",
+              "title": "Read the original",
+              "body": "[Menu-Design Checklist: 17 UX Guidelines](https://www.nngroup.com/articles/menu-design/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-59"
+          ],
+          "guideOrder": 28
+        },
+        {
+          "id": "topic-60",
+          "type": "slides",
+          "title": "Make navigation noticeable",
+          "slides": [
+            {
+              "id": "topic-60-1",
+              "title": "Design for recognition",
+              "body": "A menu must be noticed before it can help. Placement, contrast, styling and visible labels influence whether visitors recognise available routes."
+            },
+            {
+              "id": "topic-60-2",
+              "title": "Respect familiar locations",
+              "body": "Put important navigation where users are likely to look. Avoid making ordinary choices resemble advertising or decorative content."
+            },
+            {
+              "id": "topic-60-3",
+              "title": "Verify in context",
+              "body": "Inspect the page at realistic sizes and during realistic tasks. Do not assume the designer’s knowledge of where a menu lives will transfer to a newcomer."
+            },
+            {
+              "id": "topic-60-4",
+              "title": "Worked example",
+              "body": "Cedar puts course categories inside a photographic banner with no contrasting background. Visitors scan past them as promotion. Moving the same labels into the normal header gives clearer evidence that they are navigation."
+            },
+            {
+              "id": "topic-60-5",
+              "title": "Try it in your notes",
+              "body": "Show a page briefly to someone unfamiliar with it. Ask where they would begin finding a class. Record what they noticed before explaining the design."
+            },
+            {
+              "id": "topic-60-6",
+              "title": "Review your answer",
+              "body": "If they point to search or an unrelated card, investigate why. The observation suggests a question; it does not prove a single cause. Compare a version with clearer positioning and styling using equivalent tasks."
+            },
+            {
+              "id": "topic-60-7",
+              "title": "Read the original",
+              "body": "[Navigation Menus - 5 Tips to Make Them Visible (Video)](https://www.nngroup.com/videos/navigation-menu-visibility/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-60"
+          ],
+          "guideOrder": 29
+        },
+        {
+          "id": "topic-61",
+          "type": "slides",
+          "title": "Understand the cost of hidden navigation",
+          "slides": [
+            {
+              "id": "topic-61-1",
+              "title": "Recognise the discoverability tradeoff",
+              "body": "Hiding navigation can save space while making options less likely to be noticed or used. NN/g’s study found poorer outcomes for hidden navigation, particularly on desktop."
+            },
+            {
+              "id": "topic-61-2",
+              "title": "Expose important options when possible",
+              "body": "A visible or partly visible menu helps people understand the offering. Limited mobile space may justify a different balance, but does not remove the discovery cost."
+            },
+            {
+              "id": "topic-61-3",
+              "title": "Measure tasks, not menu clicks alone",
+              "body": "A rise in opening the menu could mean engagement or extra work. Examine task success, time, discovery and perceived difficulty together."
+            },
+            {
+              "id": "topic-61-4",
+              "title": "Worked example",
+              "body": "Cedar’s desktop header has room for Courses, Membership and Venue hire. Replacing them all with an unlabelled hamburger reduces visible evidence that venue hire exists."
+            },
+            {
+              "id": "topic-61-5",
+              "title": "Try it in your notes",
+              "body": "Propose visible, hidden and combined navigation for Cedar’s phone layout. State which destinations remain exposed and which risk becoming undiscoverable."
+            },
+            {
+              "id": "topic-61-6",
+              "title": "Review your answer",
+              "body": "A combined version might show Courses and Bookings plus a labelled Menu control. Test whether people find the less visible venue-hire option. Do not generalise one study’s exact numerical effect to every site."
+            },
+            {
+              "id": "topic-61-7",
+              "title": "Read the original",
+              "body": "[Hamburger Menus and Hidden Navigation Hurt UX Metrics](https://www.nngroup.com/articles/hamburger-menus/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-61"
+          ],
+          "guideOrder": 30
+        },
+        {
+          "id": "topic-62",
+          "type": "slides",
+          "title": "Preserve global routes across the site",
+          "slides": [
+            {
+              "id": "topic-62-1",
+              "title": "Provide persistent scope",
+              "body": "Global navigation gives access to major categories and helps visitors understand the site after landing on an internal page."
+            },
+            {
+              "id": "topic-62-2",
+              "title": "Avoid demoting the whole offering",
+              "body": "A single generic dropdown on a spacious desktop layout conceals category choices and adds a step before people can assess them."
+            },
+            {
+              "id": "topic-62-3",
+              "title": "Evaluate the entire journey",
+              "body": "Check direct entry, movement between sections and return routes. A cleaner header can create downstream confusion if it removes useful context."
+            },
+            {
+              "id": "topic-62-4",
+              "title": "Worked example",
+              "body": "A visitor arrives at Cedar’s pottery page from a search engine. Courses, Membership and Visit us in the header communicate the broader service. A lone “Browse” button provides less context."
+            },
+            {
+              "id": "topic-62-5",
+              "title": "Try it in your notes",
+              "body": "Open three deep pages on your practice site without visiting the homepage. What can you infer about the organisation and other available services?"
+            },
+            {
+              "id": "topic-62-6",
+              "title": "Review your answer",
+              "body": "Record missing scope cues and routes to related tasks. Check whether a consistent global menu would help before adding more promotional content. The goal is useful access and orientation, not identical headers at any cost."
+            },
+            {
+              "id": "topic-62-7",
+              "title": "Read the original",
+              "body": "[Killing Off the Global Navigation: One Trend to Avoid | Nielsen Norman Group](https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-62"
+          ],
+          "guideOrder": 31
+        },
+        {
+          "id": "topic-63",
+          "type": "slides",
+          "title": "Use audience categories only when they help",
+          "slides": [
+            {
+              "id": "topic-63-1",
+              "title": "Recognise audience-based navigation",
+              "body": "Audience categories organise information around groups such as Students, Tutors or Employers. They can be useful when people identify clearly with a group and its content is distinct."
+            },
+            {
+              "id": "topic-63-2",
+              "title": "Check overlapping roles",
+              "body": "People can belong to several groups or be unsure which applies. Shared tasks may become duplicated or difficult to locate when audience divisions dominate."
+            },
+            {
+              "id": "topic-63-3",
+              "title": "Compare task and topic routes",
+              "body": "Use audience routes alongside other structures when evidence supports them. Test people with overlapping identities and visitors who do not know your organisation’s categories."
+            },
+            {
+              "id": "topic-63-4",
+              "title": "Worked example",
+              "body": "A Cedar tutor who also takes evening classes may not know whether refunds belong under Tutors or Learners. A clear Bookings route can serve the task regardless of role."
+            },
+            {
+              "id": "topic-63-5",
+              "title": "Try it in your notes",
+              "body": "Design two candidate routes to a bursary guide: one audience-based and one task/topic-based. Include a person who belongs to more than one audience in your test plan."
+            },
+            {
+              "id": "topic-63-6",
+              "title": "Review your answer",
+              "body": "“Young learners” may help if eligibility and content differ clearly. “Fees and funding” can support a broader task. Avoid maintaining contradictory versions of the same policy under separate audience sections."
+            },
+            {
+              "id": "topic-63-7",
+              "title": "Read the original",
+              "body": "[Audience-Based Website Navigation (Video)](https://www.nngroup.com/videos/audience-based-website-navigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-63"
+          ],
+          "guideOrder": 32
+        },
+        {
+          "id": "global-check",
+          "type": "quiz",
+          "title": "Check: Global navigation",
+          "skill": "Check: Global navigation",
+          "questions": [
+            {
+              "id": "global-check-q1",
+              "prompt": "A desktop menu hides everything despite ample space. The main risk is:",
+              "options": [
+                "Reduced visibility of the site’s offering",
+                "Guaranteed slower server responses",
+                "Automatically duplicated database records"
+              ],
+              "answer": 0,
+              "explanation": "Exposed choices help discovery and communicate scope."
+            },
+            {
+              "id": "global-check-q2",
+              "prompt": "A user is both a tutor and learner. Audience navigation should:",
+              "options": [
+                "Force one permanent identity",
+                "Duplicate all policies under both audiences",
+                "Be tested for overlap and supported by useful task routes"
+              ],
+              "answer": 2,
+              "explanation": "People can occupy several roles; structure must account for shared needs."
+            },
+            {
+              "id": "global-check-q3",
+              "prompt": "A menu opens only when the pointer hovers. What is required?",
+              "options": [
+                "Faster animation only",
+                "Usable alternatives for keyboard and touch",
+                "A warning telling keyboard users to buy a mouse"
+              ],
+              "answer": 1,
+              "explanation": "Essential destinations must not depend solely on hover."
+            },
+            {
+              "id": "global-check-q4",
+              "prompt": "After a menu change, more people open it. Can you conclude success?",
+              "options": [
+                "No; inspect tasks, effort and outcomes",
+                "Yes; menu clicks are the goal for every site",
+                "Yes, if the menu uses fewer words"
+              ],
+              "answer": 0,
+              "explanation": "A click increase can reflect useful activity or additional work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wayfinding",
+      "type": "section",
+      "title": "7 Orientation and wayfinding",
+      "children": [
+        {
+          "id": "topic-64",
+          "type": "slides",
+          "title": "Show people where they are",
+          "slides": [
+            {
+              "id": "topic-64-1",
+              "title": "Support direct entry",
+              "body": "Any page can be a visitor’s first encounter. A clear heading, site identity and structural context help people decide whether they reached the right place."
+            },
+            {
+              "id": "topic-64-2",
+              "title": "Use complementary location cues",
+              "body": "Current-section styling, breadcrumbs and local navigation can communicate different levels of location. Make the indication clear without relying only on colour."
+            },
+            {
+              "id": "topic-64-3",
+              "title": "Test orientation explicitly",
+              "body": "Ask visitors where they are, what the page belongs to and where they would go next. A working link alone does not establish orientation."
+            },
+            {
+              "id": "topic-64-4",
+              "title": "Worked example",
+              "body": "The page heading says “Before your first lesson”, while the sidebar identifies Pottery for beginners and the global menu marks Courses. Together the cues place a generic instruction page within a meaningful context."
+            },
+            {
+              "id": "topic-64-5",
+              "title": "Try it in your notes",
+              "body": "Choose a deep Cedar page. List its page-level, section-level and site-level cues. Remove one mentally: what ambiguity appears?"
+            },
+            {
+              "id": "topic-64-6",
+              "title": "Review your answer",
+              "body": "Without the course context, a learner might assume instructions apply to all classes. Keep the cues that distinguish scope. Evaluate whether visitors can explain the location without being coached."
+            },
+            {
+              "id": "topic-64-7",
+              "title": "Read the original",
+              "body": "[Navigation: You Are Here](https://www.nngroup.com/articles/navigation-you-are-here/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-64"
+          ],
+          "guideOrder": 33
+        },
+        {
+          "id": "topic-65",
+          "type": "slides",
+          "title": "Apply digital wayfinding",
+          "slides": [
+            {
+              "id": "topic-65-1",
+              "title": "Create a readable environment",
+              "body": "Wayfinding helps people understand their current location and possible routes. Digital equivalents of districts, paths and landmarks can make an information space easier to recognise."
+            },
+            {
+              "id": "topic-65-2",
+              "title": "Keep landmarks consistent",
+              "body": "Stable section names, page identities and navigation placement help people recognise places they have visited. Arbitrary changes can break that continuity."
+            },
+            {
+              "id": "topic-65-3",
+              "title": "Provide recovery routes",
+              "body": "Visitors should be able to move up, change direction or return to a useful starting point. An unfamiliar deep page should not become a dead end."
+            },
+            {
+              "id": "topic-65-4",
+              "title": "Worked example",
+              "body": "Cedar uses a consistent course title as a landmark across overview, timetable and preparation pages. Local navigation connects the pages. A Courses link offers a route back to the wider collection."
+            },
+            {
+              "id": "topic-65-5",
+              "title": "Try it in your notes",
+              "body": "For your practice site, identify a district, a landmark and a recovery route. Explain how each differs from decoration."
+            },
+            {
+              "id": "topic-65-6",
+              "title": "Review your answer",
+              "body": "A named course section is a district; its persistent title can be a landmark; a parent category link supports recovery. Their value depends on helping people understand and move, not on mimicking a physical map literally."
+            },
+            {
+              "id": "topic-65-7",
+              "title": "Read the original",
+              "body": "[Digital Wayfinding (Video)](https://www.nngroup.com/videos/digital-wayfinding/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-65"
+          ],
+          "guideOrder": 34
+        },
+        {
+          "id": "topic-66",
+          "type": "slides",
+          "title": "Design useful breadcrumbs",
+          "slides": [
+            {
+              "id": "topic-66-1",
+              "title": "Represent location, not history",
+              "body": "Breadcrumbs show a meaningful path within the hierarchy. They supplement global and local navigation. On polyhierarchical sites, choose one coherent path rather than showing every possible parent."
+            },
+            {
+              "id": "topic-66-2",
+              "title": "Link actual destinations",
+              "body": "Start with Home where appropriate, include real parent pages and end with the current page as nonlinked text. Avoid phantom categories that have no destination."
+            },
+            {
+              "id": "topic-66-3",
+              "title": "Adapt to small screens",
+              "body": "Do not shrink targets into unreadable text or wrap a long trail awkwardly. Consider showing fewer nearby levels. Breadcrumbs add little to a very shallow or purely linear site."
+            },
+            {
+              "id": "topic-66-4",
+              "title": "Worked example",
+              "body": "For Cedar’s pottery preparation page, a useful ordered trail is Home, Courses, Pottery for beginners, Before your first lesson. It describes structure even when someone arrives directly from a search engine."
+            },
+            {
+              "id": "topic-66-5",
+              "title": "Try it in your notes",
+              "body": "Write breadcrumbs for a page with two possible parents. Choose a policy and explain the phone version. Check that every linked parent is a real page."
+            },
+            {
+              "id": "topic-66-6",
+              "title": "Review your answer",
+              "body": "A canonical course path is one defensible choice. A shorter phone trail might expose the immediate parent with a clear label. Verify context, target usability and consistency rather than blindly retaining every level."
+            },
+            {
+              "id": "topic-66-7",
+              "title": "Read the original",
+              "body": "[Breadcrumbs: 11 Design Guidelines for Desktop and Mobile](https://www.nngroup.com/articles/breadcrumbs/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-66"
+          ],
+          "guideOrder": 35
+        },
+        {
+          "id": "topic-67",
+          "type": "slides",
+          "title": "Use local navigation for nearby content",
+          "slides": [
+            {
+              "id": "topic-67-1",
+              "title": "Show the neighbourhood",
+              "body": "Local navigation exposes pages within the current section. It supports orientation and comparison without forcing repeated trips back to a parent page."
+            },
+            {
+              "id": "topic-67-2",
+              "title": "Distinguish global and local choices",
+              "body": "Global navigation moves between major sections. Local navigation provides relevant detail within one. Give the local group a meaningful heading and identify the current page."
+            },
+            {
+              "id": "topic-67-3",
+              "title": "Keep it manageable",
+              "body": "Expose useful siblings and parents without dumping the entire site tree into a sidebar. Adapt presentation for narrow screens while preserving access."
+            },
+            {
+              "id": "topic-67-4",
+              "title": "Worked example",
+              "body": "A Cedar course sidebar offers Overview, Dates and fees, Before you arrive and Accessibility. Learners can compare preparation and access information without repeatedly returning to the course overview."
+            },
+            {
+              "id": "topic-67-5",
+              "title": "Try it in your notes",
+              "body": "Choose five useful local destinations for venue hire. Which belong in global navigation or in the page body instead?"
+            },
+            {
+              "id": "topic-67-6",
+              "title": "Review your answer",
+              "body": "Room options, Prices, Availability and booking, Equipment and Access could form local navigation. Membership is a global alternative; a specific cancellation deadline belongs in policy content, possibly linked contextually."
+            },
+            {
+              "id": "topic-67-7",
+              "title": "Read the original",
+              "body": "[Local Navigation Is a Valuable Orientation and Wayfinding Aid](https://www.nngroup.com/articles/local-navigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-67"
+          ],
+          "guideOrder": 36
+        },
+        {
+          "id": "wayfinding-check",
+          "type": "quiz",
+          "title": "Check: Orientation and wayfinding",
+          "skill": "Check: Orientation and wayfinding",
+          "questions": [
+            {
+              "id": "wayfinding-check-q1",
+              "prompt": "Someone arrives on a deep page from search. What helps?",
+              "options": [
+                "Assuming they saw the homepage",
+                "Removing all links to other sections",
+                "Clear page identity and section context"
+              ],
+              "answer": 2,
+              "explanation": "Direct-entry visitors still need orientation."
+            },
+            {
+              "id": "wayfinding-check-q2",
+              "prompt": "What should ordinary location breadcrumbs describe?",
+              "options": [
+                "Every possible parent at once",
+                "A coherent path in the site hierarchy",
+                "Every page clicked in this browser session"
+              ],
+              "answer": 1,
+              "explanation": "Hierarchy and browsing history are different."
+            },
+            {
+              "id": "wayfinding-check-q3",
+              "prompt": "A breadcrumb parent has no actual page. What should you do?",
+              "options": [
+                "Reconsider the trail or provide a meaningful destination",
+                "Link it to an unrelated page",
+                "Keep a broken link to maintain symmetry"
+              ],
+              "answer": 0,
+              "explanation": "Breadcrumb links should represent useful real destinations."
+            },
+            {
+              "id": "wayfinding-check-q4",
+              "prompt": "Visitors repeatedly go up to compare sibling pages. Consider:",
+              "options": [
+                "Removing section labels",
+                "Hiding the parent link",
+                "Useful local navigation"
+              ],
+              "answer": 2,
+              "explanation": "Local routes can reduce unnecessary trips through the parent page."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patterns",
+      "type": "section",
+      "title": "8 Navigation patterns",
+      "children": [
+        {
+          "id": "topic-68",
+          "type": "slides",
+          "title": "Keep sticky headers useful and unobtrusive",
+          "slides": [
+            {
+              "id": "topic-68-1",
+              "title": "Decide whether persistence helps",
+              "body": "A sticky header keeps controls available during scrolling. Use it when repeated access benefits the task; it also consumes space and can obstruct content."
+            },
+            {
+              "id": "topic-68-2",
+              "title": "Control size and contrast",
+              "body": "Keep persistent chrome compact and distinguish it from the content beneath. Check that headings, focused controls and anchor destinations remain visible."
+            },
+            {
+              "id": "topic-68-3",
+              "title": "Avoid distracting movement",
+              "body": "Use minimal, predictable motion. A partially persistent header may be appropriate, but appearing and disappearing controls should not interfere with reading or interaction."
+            },
+            {
+              "id": "topic-68-4",
+              "title": "Worked example",
+              "body": "Cedar’s phone header occupies almost half the screen after the menu and voice bar open. A compact header with the active voice controls in normal flow leaves more room for the lesson or booking content."
+            },
+            {
+              "id": "topic-68-5",
+              "title": "Try it in your notes",
+              "body": "Inspect a long page while scrolling and enlarging text. Note any content hidden by the header, keyboard focus obscured or jump-link destinations covered."
+            },
+            {
+              "id": "topic-68-6",
+              "title": "Review your answer",
+              "body": "Reduce unnecessary height, provide suitable scroll spacing and reconsider persistence if it does not support the task. Test the combined state with banners, navigation and optional voice controls visible."
+            },
+            {
+              "id": "topic-68-7",
+              "title": "Read the original",
+              "body": "[Sticky Headers: 5 Ways to Make Them Better](https://www.nngroup.com/articles/sticky-headers/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-68"
+          ],
+          "guideOrder": 37
+        },
+        {
+          "id": "topic-69",
+          "type": "slides",
+          "title": "Choose vertical navigation for a broad structure",
+          "slides": [
+            {
+              "id": "topic-69-1",
+              "title": "Recognise its strengths",
+              "body": "A left-side vertical menu can accommodate more categories and longer labels than a constrained horizontal bar. It is familiar and supports scanning and growth."
+            },
+            {
+              "id": "topic-69-2",
+              "title": "Accept its space cost",
+              "body": "The sidebar consumes width. Evaluate the content area and responsive behaviour rather than squeezing the same structure into every screen."
+            },
+            {
+              "id": "topic-69-3",
+              "title": "Make the list scannable",
+              "body": "Left-align labels, put distinguishing words early and keep the menu visible. Separate levels clearly and avoid reducing readability to make everything fit."
+            },
+            {
+              "id": "topic-69-4",
+              "title": "Worked example",
+              "body": "Cedar’s staff learning portal has twelve subject areas with descriptive names. A left sidebar accommodates them without tiny text. On a phone, a labelled course-outline control exposes the same subjects."
+            },
+            {
+              "id": "topic-69-5",
+              "title": "Try it in your notes",
+              "body": "Compare a horizontal bar and vertical list using the same twelve labels. Identify where truncation or compression would change meaning."
+            },
+            {
+              "id": "topic-69-6",
+              "title": "Review your answer",
+              "body": "If “Support for course tutors” becomes “Support”, the saved space sacrifices useful distinction. Consider a vertical pattern or different grouping before changing the label. Validate scanning and narrow-screen access."
+            },
+            {
+              "id": "topic-69-7",
+              "title": "Read the original",
+              "body": "[Left-Side Vertical Navigation on Desktop: Scalable, Responsive, and Easy to Scan](https://www.nngroup.com/articles/vertical-nav/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-69"
+          ],
+          "guideOrder": 38
+        },
+        {
+          "id": "topic-70",
+          "type": "slides",
+          "title": "Plan vertical navigation states",
+          "slides": [
+            {
+              "id": "topic-70-1",
+              "title": "Separate pattern from hierarchy",
+              "body": "A vertical list can represent global or local navigation. Its direction does not determine the information architecture or which levels should be exposed."
+            },
+            {
+              "id": "topic-70-2",
+              "title": "Specify expansion and selection",
+              "body": "Show which groups expand, which destinations navigate and which page is current. Avoid one ambiguous target doing different things depending on where it is clicked."
+            },
+            {
+              "id": "topic-70-3",
+              "title": "Handle long lists deliberately",
+              "body": "Consider scrolling, section grouping and preservation of position. Keep keyboard access and orientation intact when the selected page changes."
+            },
+            {
+              "id": "topic-70-4",
+              "title": "Worked example",
+              "body": "Cedar’s LMS outline has section disclosures and lesson links inside them. Opening a section exposes choices; selecting a lesson changes content. These actions should remain distinct and consistently labelled."
+            },
+            {
+              "id": "topic-70-5",
+              "title": "Try it in your notes",
+              "body": "Write a state specification for a course sidebar: collapsed group, expanded group, current lesson and narrow-screen drawer. State what happens to focus when it closes."
+            },
+            {
+              "id": "topic-70-6",
+              "title": "Review your answer",
+              "body": "A drawer should return focus to its trigger when closed. Current-page meaning should be exposed to assistive technology as well as visually. Do not claim a sidebar is accessible without testing its actual interaction."
+            },
+            {
+              "id": "topic-70-7",
+              "title": "Read the original",
+              "body": "[Vertical Navigation (Video)](https://www.nngroup.com/videos/vertical-navigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-70"
+          ],
+          "guideOrder": 39
+        },
+        {
+          "id": "topic-71",
+          "type": "slides",
+          "title": "Place utility navigation where it is needed",
+          "slides": [
+            {
+              "id": "topic-71-1",
+              "title": "Identify supporting tools",
+              "body": "Utility navigation provides actions such as sign in, contact, save, print or change view. These tools support use of the site rather than define its main subject categories."
+            },
+            {
+              "id": "topic-71-2",
+              "title": "Group and place by purpose",
+              "body": "Use expected locations and distinguish account tools from primary categories. Put contextual tools near the content they affect when that improves understanding."
+            },
+            {
+              "id": "topic-71-3",
+              "title": "Use clear labels and states",
+              "body": "Recognisable icons may support tools, but require accessible names. Explain state changes and show only actions that are actually available."
+            },
+            {
+              "id": "topic-71-4",
+              "title": "Worked example",
+              "body": "Cedar’s public categories are Courses, Membership and Visit us. Sign in belongs with account tools. Print this timetable belongs near the timetable. A voice icon appears only after the server verifies private access."
+            },
+            {
+              "id": "topic-71-5",
+              "title": "Try it in your notes",
+              "body": "Classify Notes, Courses, Sign out, Contact and Print timetable. Decide where each should appear and what its label must explain."
+            },
+            {
+              "id": "topic-71-6",
+              "title": "Review your answer",
+              "body": "Courses is primary navigation. Sign out is an account utility. Notes and Print are contextual tools; Contact may be global utility or a primary task depending on the service. Document the reason for each placement."
+            },
+            {
+              "id": "topic-71-7",
+              "title": "Read the original",
+              "body": "[Utility Navigation: What It Is and How to Design It](https://www.nngroup.com/articles/utility-navigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-71"
+          ],
+          "guideOrder": 40
+        },
+        {
+          "id": "topic-72",
+          "type": "slides",
+          "title": "Give the footer a deliberate job",
+          "slides": [
+            {
+              "id": "topic-72-1",
+              "title": "Support expected secondary routes",
+              "body": "Footers often contain contact, help, legal information and other supporting destinations. Visitors may look there intentionally or after failing to find a route elsewhere."
+            },
+            {
+              "id": "topic-72-2",
+              "title": "Choose a pattern for the content",
+              "body": "A compact footer, grouped doormat navigation, site-map links, secondary tasks or contextual footer serve different needs. Do not add a large footer solely to imitate another site."
+            },
+            {
+              "id": "topic-72-3",
+              "title": "Keep it reachable",
+              "body": "Infinite scrolling can make the footer impossible to reach. Promotional modules should not obscure necessary links. Maintain the same labelling care used in the main menu."
+            },
+            {
+              "id": "topic-72-4",
+              "title": "Worked example",
+              "body": "Cedar’s footer groups Contact, Accessibility and Privacy, plus a clear Venue hire route. A long events feed provides a stable way to reach footer information rather than continually pushing it away."
+            },
+            {
+              "id": "topic-72-5",
+              "title": "Try it in your notes",
+              "body": "Design a small footer inventory. For each item, record its user need and whether another route should also exist. Remove one item with no clear purpose."
+            },
+            {
+              "id": "topic-72-6",
+              "title": "Review your answer",
+              "body": "Important accessibility support may need contextual links as well as a footer route. The footer is useful redundancy, not a place to hide content essential to booking. Verify that visitors can reach it by keyboard and on a phone."
+            },
+            {
+              "id": "topic-72-7",
+              "title": "Read the original",
+              "body": "[Web Page Footers 101: Design Patterns and When to Use Each](https://www.nngroup.com/articles/footers/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-72"
+          ],
+          "guideOrder": 41
+        },
+        {
+          "id": "topic-73",
+          "type": "slides",
+          "title": "Use mega menus for grouped choices",
+          "slides": [
+            {
+              "id": "topic-73-1",
+              "title": "Expose useful levels together",
+              "body": "A mega menu presents multiple grouped choices in a large panel. It can reveal categories and subcategories at a glance without forcing deep cascading menus."
+            },
+            {
+              "id": "topic-73-2",
+              "title": "Organise the panel",
+              "body": "Use meaningful group headings, clear typography and orderly placement. Keep the choices understandable without promotional images or colour alone."
+            },
+            {
+              "id": "topic-73-3",
+              "title": "Specify reliable interaction",
+              "body": "Support click/tap and keyboard access, predictable closing and manageable focus. Pointer hover should not be the only route. Plan an alternative for smaller screens."
+            },
+            {
+              "id": "topic-73-4",
+              "title": "Worked example",
+              "body": "Cedar’s Courses panel groups Arts, Computing and Languages with several popular subjects beneath each. Its full directory remains reachable. An unrelated membership promotion would compete with the menu’s finding task."
+            },
+            {
+              "id": "topic-73-5",
+              "title": "Try it in your notes",
+              "body": "Sketch the content specification for a mega menu using three groups and nine destinations. Write the small-screen fallback and the keyboard behaviour."
+            },
+            {
+              "id": "topic-73-6",
+              "title": "Review your answer",
+              "body": "A nested disclosure or category landing page can expose the same destinations on a phone. Do not merely shrink the desktop panel. Ensure that group headings and actual destination links are distinguishable."
+            },
+            {
+              "id": "topic-73-7",
+              "title": "Read the original",
+              "body": "[Mega Menus Work Well for Site Navigation](https://www.nngroup.com/articles/mega-menus-work-well/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-73"
+          ],
+          "guideOrder": 42
+        },
+        {
+          "id": "topic-74",
+          "type": "slides",
+          "title": "Make the route home recognisable",
+          "slides": [
+            {
+              "id": "topic-74-1",
+              "title": "Use convention deliberately",
+              "body": "People often expect a site’s logo or identity at the upper left to return home. NN/g’s study found that centring the logo made returning home harder in its tested designs."
+            },
+            {
+              "id": "topic-74-2",
+              "title": "Separate branding from navigation evidence",
+              "body": "Aesthetic preference or brand recall does not establish that visitors recognise a home link. Check placement, accessible naming and additional home routes."
+            },
+            {
+              "id": "topic-74-3",
+              "title": "Test the relevant context",
+              "body": "Do not treat a study’s exact effect size as a universal prediction. Include direct entry and recovery tasks across the layouts your audience uses."
+            },
+            {
+              "id": "topic-74-4",
+              "title": "Worked example",
+              "body": "Cedar places its linked identity at the top left and supplies a clear Home destination where useful. A mobile layout preserves an understandable route instead of assuming a decorative centred mark will be recognised."
+            },
+            {
+              "id": "topic-74-5",
+              "title": "Try it in your notes",
+              "body": "Open a deep page and ask someone to return to the site’s starting point. Record the first action, hesitation and whether the route was understood."
+            },
+            {
+              "id": "topic-74-6",
+              "title": "Review your answer",
+              "body": "If the identity is mistaken for decoration, inspect its placement and accessible name. An explicit Home link can provide another route. Avoid making users depend on a convention they cannot perceive."
+            },
+            {
+              "id": "topic-74-7",
+              "title": "Read the original",
+              "body": "[Centered Logos Hurt Website Navigation](https://www.nngroup.com/articles/centered-logos/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-74"
+          ],
+          "guideOrder": 43
+        },
+        {
+          "id": "patterns-check",
+          "type": "quiz",
+          "title": "Check: Navigation patterns",
+          "skill": "Check: Navigation patterns",
+          "questions": [
+            {
+              "id": "patterns-check-q1",
+              "prompt": "A sticky header obscures focused controls. What should change?",
+              "options": [
+                "The number of taxonomy terms",
+                "Its layout or persistence so content and focus remain usable",
+                "Only the menu’s alphabetical order"
+              ],
+              "answer": 1,
+              "explanation": "Persistent chrome must not obstruct essential content."
+            },
+            {
+              "id": "patterns-check-q2",
+              "prompt": "Long labels become ambiguous when squeezed into a top bar. Consider:",
+              "options": [
+                "A suitable vertical pattern or revised grouping",
+                "Smaller and smaller text",
+                "Replacing all labels with decorative icons"
+              ],
+              "answer": 0,
+              "explanation": "Choose a pattern that accommodates useful meaning."
+            },
+            {
+              "id": "patterns-check-q3",
+              "prompt": "Which is usually a utility rather than a subject category?",
+              "options": [
+                "Computing courses",
+                "Swimming",
+                "Sign out"
+              ],
+              "answer": 2,
+              "explanation": "Utilities support interaction and account tasks."
+            },
+            {
+              "id": "patterns-check-q4",
+              "prompt": "A mega menu works on hover only. Is the job complete?",
+              "options": [
+                "Yes; a large panel makes it accessible automatically",
+                "No; specify keyboard, touch and responsive behaviour",
+                "Yes; the groupings are visible in a screenshot"
+              ],
+              "answer": 1,
+              "explanation": "The pattern must be operable, not just visually plausible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "type": "section",
+      "title": "9 Mobile navigation",
+      "children": [
+        {
+          "id": "topic-75",
+          "type": "slides",
+          "title": "Select a mobile navigation pattern",
+          "slides": [
+            {
+              "id": "topic-75-1",
+              "title": "Balance visibility and space",
+              "body": "Mobile navigation needs to remain discoverable and operable without consuming the content area. The best balance depends on the offering and frequent tasks."
+            },
+            {
+              "id": "topic-75-2",
+              "title": "Compare the main approaches",
+              "body": "Visible navigation or tab bars expose a limited set of destinations. A menu drawer can hold more but hides choices. A navigation hub uses a page to present routes with more context."
+            },
+            {
+              "id": "topic-75-3",
+              "title": "Keep essentials recognisable",
+              "body": "Prioritise meaningful destinations, clear labels and usable targets. Preserve access to less frequent tasks and test whether hidden options are found."
+            },
+            {
+              "id": "topic-75-4",
+              "title": "Worked example",
+              "body": "A compact Cedar booking app might expose Courses, My bookings and Account. A broad public site may need a labelled menu and useful category pages rather than trying to fit every category in a bottom bar."
+            },
+            {
+              "id": "topic-75-5",
+              "title": "Try it in your notes",
+              "body": "Choose a pattern for Cedar’s public site and its returning-member booking tool. State the top tasks and the cost of your choice."
+            },
+            {
+              "id": "topic-75-6",
+              "title": "Review your answer",
+              "body": "Different products can justify different patterns. A bar with three frequent destinations can support returning members, while a public site needs to reveal a broader offering. Evaluate the hidden routes rather than treating them as solved."
+            },
+            {
+              "id": "topic-75-7",
+              "title": "Read the original",
+              "body": "[Basic Patterns for Mobile Navigation](https://www.nngroup.com/articles/mobile-navigation-patterns/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-75"
+          ],
+          "guideOrder": 44
+        },
+        {
+          "id": "topic-76",
+          "type": "slides",
+          "title": "Preserve context in mobile subnavigation",
+          "slides": [
+            {
+              "id": "topic-76-1",
+              "title": "Handle more than one level",
+              "body": "Mobile subnavigation reveals choices within a section. Common patterns include accordions, sequential menus, section menus and subnavigation hubs. Each trades visible context against space and interaction effort."
+            },
+            {
+              "id": "topic-76-2",
+              "title": "Make movement clear",
+              "body": "People should distinguish opening a group, visiting a category page and moving back a level. Provide current section context so a new panel does not feel like an unrelated page."
+            },
+            {
+              "id": "topic-76-3",
+              "title": "Avoid ambiguous split actions",
+              "body": "A parent label that navigates while a tiny adjacent icon expands can be confusing. Use a clear, testable interaction and ensure parent overview content remains reachable."
+            },
+            {
+              "id": "topic-76-4",
+              "title": "Worked example",
+              "body": "Cedar’s phone menu opens Courses, then Computing. The panel heading identifies Computing and a labelled Back to Courses control reverses the level. “Computing overview” remains a real destination."
+            },
+            {
+              "id": "topic-76-5",
+              "title": "Try it in your notes",
+              "body": "Specify how someone reaches a third-level course and then moves to a sibling subject. Include expansion, page navigation and back behaviour."
+            },
+            {
+              "id": "topic-76-6",
+              "title": "Review your answer",
+              "body": "A sequential menu can retain a visible title and parent route. An accordion can retain surrounding categories but grow long. Test whether visitors understand both location and next action, including with keyboard and screen reader."
+            },
+            {
+              "id": "topic-76-7",
+              "title": "Read the original",
+              "body": "[Mobile Subnavigation](https://www.nngroup.com/articles/mobile-subnavigation/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-76"
+          ],
+          "guideOrder": 45
+        },
+        {
+          "id": "topic-77",
+          "type": "slides",
+          "title": "Distinguish expansion from navigation",
+          "slides": [
+            {
+              "id": "topic-77-1",
+              "title": "Use a clear signifier",
+              "body": "NN/g’s accordion-icon research found the caret more clearly communicated expansion in place than the alternatives it tested. A signifier is a cue to an action, not the action itself."
+            },
+            {
+              "id": "topic-77-2",
+              "title": "Align cue and behaviour",
+              "body": "An expanding control should expose its state and operate consistently across its label and icon. Do not present a familiar expansion cue that unexpectedly navigates elsewhere."
+            },
+            {
+              "id": "topic-77-3",
+              "title": "Test more than recognition",
+              "body": "Comprehensible icons do not establish keyboard operation, focus handling or content discoverability. Keep meaningful text and test the whole control."
+            },
+            {
+              "id": "topic-77-4",
+              "title": "Worked example",
+              "body": "In Cedar’s outline, “Research methods” and its SVG caret form one disclosure target. Selecting it reveals lessons. The separate “Card sorting” link opens a lesson. A screen reader can identify the disclosure’s state."
+            },
+            {
+              "id": "topic-77-5",
+              "title": "Try it in your notes",
+              "body": "Write a control specification with its accessible name, action, expanded state and keyboard operation. How will a user know whether selecting it changes the page?"
+            },
+            {
+              "id": "topic-77-6",
+              "title": "Review your answer",
+              "body": "A button can expand a group and expose aria-expanded; a link can navigate to a destination. Native details/summary may suit a simple disclosure. Choose semantics based on behaviour and verify the actual implementation."
+            },
+            {
+              "id": "topic-77-7",
+              "title": "Read the original",
+              "body": "[Accordion Icons: Which Signifiers Work Best?](https://www.nngroup.com/articles/accordion-icons/)"
+            }
+          ],
+          "sourceIds": [
+            "nng-77"
+          ],
+          "guideOrder": 46
+        },
+        {
+          "id": "mobile-check",
+          "type": "quiz",
+          "title": "Check: Mobile navigation",
+          "skill": "Check: Mobile navigation",
+          "questions": [
+            {
+              "id": "mobile-check-q1",
+              "prompt": "A parent label navigates while a tiny adjacent icon expands. Investigate:",
+              "options": [
+                "Whether users understand and can operate both actions",
+                "Only whether the icon is colourful",
+                "Whether all headings rhyme"
+              ],
+              "answer": 0,
+              "explanation": "Split actions can create ambiguity and small targets."
+            },
+            {
+              "id": "mobile-check-q2",
+              "prompt": "A phone menu panel replaces the previous level. Include:",
+              "options": [
+                "Only an unlabelled close icon",
+                "No way to change direction",
+                "A clear current-section title and parent route"
+              ],
+              "answer": 2,
+              "explanation": "Sequential navigation needs orientation and recovery."
+            },
+            {
+              "id": "mobile-check-q3",
+              "prompt": "A caret correctly suggests expansion. What still needs testing?",
+              "options": [
+                "Nothing; recognition proves full accessibility",
+                "Actual state announcements and operation",
+                "Only the brand font"
+              ],
+              "answer": 1,
+              "explanation": "A useful signifier does not establish complete interaction quality."
+            },
+            {
+              "id": "mobile-check-q4",
+              "prompt": "Which phone pattern is always best?",
+              "options": [
+                "None; compare the task and tradeoffs",
+                "An unlabelled hamburger for all sites",
+                "A five-item bottom bar for every content space"
+              ],
+              "answer": 0,
+              "explanation": "Visibility, capacity and space requirements vary."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apply",
+      "type": "section",
+      "title": "10 Apply and maintain",
+      "children": [
+        {
+          "id": "inventory",
+          "type": "slides",
+          "title": "Build an inventory and audit",
+          "slides": [
+            {
+              "id": "inventory-1",
+              "title": "Create the evidence base",
+              "body": "This authored workshop starts before rearranging menus. An inventory records the content space; an audit evaluates whether each item is useful, accurate and maintainable. Include functions, documents and externally hosted steps as well as ordinary pages."
+            },
+            {
+              "id": "inventory-2",
+              "title": "Record comparable fields",
+              "body": "| Field | Example |\n| --- | --- |\n| Stable ID | C3 |\n| URL and title | /members/cancel; Cancel a booking |\n| Type and task | Policy; understand refund eligibility |\n| Owner and status | Booking team; review required |\n| Relationships | Booking record, payment help |"
+            },
+            {
+              "id": "inventory-3",
+              "title": "Evaluate quality separately",
+              "body": "Check evidence of a user need, accuracy, accessibility, duplication, relevance and ownership. An analytics count is a clue about use, not proof of usefulness. Low traffic may mean low demand or poor findability."
+            },
+            {
+              "id": "inventory-4",
+              "title": "Worked decision",
+              "body": "Cedar has two fee tables with different prices. The audit records a factual conflict and asks the course owner to verify the source of truth. The IA proposal uses one maintained fee record linked from relevant courses."
+            },
+            {
+              "id": "inventory-5",
+              "title": "Practise",
+              "body": "Inventory ten pages or functions. Mark each Keep, Improve, Merge, Retire or Investigate, with a reason and owner. Do not remove a page solely because it is old or rarely visited."
+            },
+            {
+              "id": "inventory-6",
+              "title": "Review your work",
+              "body": "Every proposed change should connect to evidence or a clearly marked hypothesis. Resolve important factual conflicts before asking participants to use misleading content. Keep an explicit list of missing information and externally owned dependencies."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "schemes",
+          "type": "slides",
+          "title": "Choose an organising scheme",
+          "slides": [
+            {
+              "id": "schemes-1",
+              "title": "Compare organising principles",
+              "body": "This workshop compares topic, task, audience, chronology and alphabetical schemes. A site can use several at different levels. Decide which expectation each scheme supports instead of mixing incompatible categories without explanation."
+            },
+            {
+              "id": "schemes-2",
+              "title": "Make the distinctions concrete",
+              "body": "| Scheme | Cedar example | Useful when |\n| --- | --- | --- |\n| Topic | Computing courses | People know the subject |\n| Task | Cancel a booking | An action is the goal |\n| Audience | Course tutors | Needs are role-specific |\n| Time | Events this week | Timing drives selection |\n| Alphabetical | Tutor directory | People know a name |"
+            },
+            {
+              "id": "schemes-3",
+              "title": "Avoid unexplained mixtures",
+              "body": "“Courses / Families / Tuesday / Help” combines topic, audience, time and support. That may create overlap. Use secondary routes or filters where they support different ways of seeking the same records."
+            },
+            {
+              "id": "schemes-4",
+              "title": "Worked proposal",
+              "body": "Cedar’s primary course organisation uses subject. Filters expose schedule, level and delivery. A Family activities landing page provides a curated alternate route to relevant courses without duplicating their maintained records."
+            },
+            {
+              "id": "schemes-5",
+              "title": "Practise",
+              "body": "Choose a primary scheme for fifteen inventory items. Add one justified secondary route. Write inclusion and exclusion rules for each top-level group."
+            },
+            {
+              "id": "schemes-6",
+              "title": "Review your work",
+              "body": "Can you explain where a new item belongs? Are sibling labels distinct enough to compare? Use outliers to challenge the scheme and make a research plan for ambiguous boundaries."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "map-model",
+          "type": "slides",
+          "title": "Specify a sitemap and content model",
+          "slides": [
+            {
+              "id": "map-model-1",
+              "title": "Document relationships",
+              "body": "This authored workshop turns your proposal into a usable specification. A sitemap records hierarchy and important cross-links. A content model records types, fields and relationships. A task flow records steps over time; it answers a different question."
+            },
+            {
+              "id": "map-model-2",
+              "title": "Use a relationship table",
+              "body": "| Item | Type | Parent | Additional route |\n| --- | --- | --- | --- |\n| Courses | Category page | Home | Main navigation |\n| Pottery | Course record | Arts courses | Family activities if eligible |\n| Prepare for pottery | Guidance | Pottery | Booking confirmation |\n| Refund policy | Policy | Booking help | Relevant course pages |"
+            },
+            {
+              "id": "map-model-3",
+              "title": "Model the record",
+              "body": "A Course could have ID, title, summary, subject, level, dates, fee relationship, venue relationship and access information. Reusing a venue record can prevent many classes from containing outdated copies of the same directions."
+            },
+            {
+              "id": "map-model-4",
+              "title": "Distinguish types of relationship",
+              "body": "“Belongs under”, “takes place at”, “requires” and “is related to” are different relationships. A sitemap alone may not capture all of them. Name the relationship before choosing how to expose it."
+            },
+            {
+              "id": "map-model-5",
+              "title": "Practise",
+              "body": "Produce a sitemap table for fifteen items and a field specification for one type. Define required fields, allowed values and who owns updates."
+            },
+            {
+              "id": "map-model-6",
+              "title": "Review your work",
+              "body": "Check unique IDs, orphan items, circular parent relationships, duplicate records and missing parent destinations. Test whether someone else can add a new course without asking you to explain the model."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "search-workshop",
+          "type": "slides",
+          "title": "Design a searchable information space",
+          "slides": [
+            {
+              "id": "search-workshop-1",
+              "title": "Connect classification to retrieval",
+              "body": "This applied workshop considers what a search experience needs: meaningful content, useful metadata, sensible result presentation and recovery. It is a design specification, not a promise that a particular search engine implements these capabilities."
+            },
+            {
+              "id": "search-workshop-2",
+              "title": "Define search behaviour",
+              "body": "Record likely queries, synonyms, spelling variants and important vocabulary differences. Decide which content types are searchable and how restricted or retired items are excluded. Keep query logs free of unnecessary personal information."
+            },
+            {
+              "id": "search-workshop-3",
+              "title": "Use filters and facets deliberately",
+              "body": "A facet describes a dimension such as subject, level or delivery. A filter narrows the current results. Specify whether selections combine with AND or OR, show active selections and provide a clear reset."
+            },
+            {
+              "id": "search-workshop-4",
+              "title": "Worked filter logic",
+              "body": "A learner selects Arts OR Computing within Subject, then Beginner within Level. If dimensions combine with AND, results must be Beginner and in either selected subject. State this explicitly rather than assuming the interface makes it obvious."
+            },
+            {
+              "id": "search-workshop-5",
+              "title": "Design results and recovery",
+              "body": "Show a descriptive title, useful summary and distinguishing context such as date, type or venue. Preserve the query when nothing matches; allow revision and clearing filters. Do not invent helpful alternatives the system cannot actually produce."
+            },
+            {
+              "id": "search-workshop-6",
+              "title": "Practise",
+              "body": "Specify results for “evening coding”, a synonym query and an empty result after filtering. Include one ambiguous result and explain which metadata would distinguish it."
+            },
+            {
+              "id": "search-workshop-7",
+              "title": "Review your work",
+              "body": "Check whether each result helps a learner predict relevance. Verify filter counts and combinations against real data. Test known-item searching and exploratory browsing separately; ranking quality cannot be established by a static mockup."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "research-plan",
+          "type": "slides",
+          "title": "Combine qualitative and quantitative evidence",
+          "slides": [
+            {
+              "id": "research-plan-1",
+              "title": "Choose the uncertainty",
+              "body": "This workshop connects to the supplementary research guides. Qualitative work explores behaviour and reasoning; quantitative work estimates or compares measures. Neither substitutes automatically for the other."
+            },
+            {
+              "id": "research-plan-2",
+              "title": "Recruit and protect participants",
+              "body": "Define who belongs in the study and relevant variation. Explain consent, recording, retention and withdrawal. Avoid collecting personal information unnecessary for the research question. Keep participant details out of public project documents."
+            },
+            {
+              "id": "research-plan-3",
+              "title": "Write a testable question",
+              "body": "“Is our IA good?” is too broad. “Can newcomers locate cancellation conditions without selecting Membership first?” identifies an audience, destination and potential problem. Decide which observation or measure would inform a change."
+            },
+            {
+              "id": "research-plan-4",
+              "title": "Worked mixed plan",
+              "body": "First observe several Cedar newcomers using the current structure to understand confusion. Revise the labels, pilot a tree test, then collect a suitable larger sample if you need a comparative estimate. Check the actual interface afterwards."
+            },
+            {
+              "id": "research-plan-5",
+              "title": "Report uncertainty honestly",
+              "body": "Record method, participants, tasks, versions and exclusions. Separate observation, interpretation and recommendation. Report a small study as exploratory; a percentage without sample size and context can imply false precision."
+            },
+            {
+              "id": "research-plan-6",
+              "title": "Practise",
+              "body": "Write one qualitative question and one quantitative question for the same task. Specify the method, success rule and limitation for each."
+            },
+            {
+              "id": "research-plan-7",
+              "title": "Review your work",
+              "body": "“What makes this label confusing?” needs reasoning evidence. “What proportion finds the destination?” needs a sampling and measurement plan. Do not use a few comments to claim prevalence or a success rate to claim you know the cause."
+            }
+          ],
+          "sourceIds": [
+            "nng-47",
+            "nng-48"
+          ]
+        },
+        {
+          "id": "accessibility-workshop",
+          "type": "slides",
+          "title": "Check navigation across access needs",
+          "slides": [
+            {
+              "id": "accessibility-workshop-1",
+              "title": "Make access part of the design",
+              "body": "This authored workshop applies the earlier navigation principles. A clear hierarchy still needs an operable interface. Plan meaningful landmarks, logical headings, descriptive links and readable content in the real layout."
+            },
+            {
+              "id": "accessibility-workshop-2",
+              "title": "Specify control semantics",
+              "body": "Use links for destinations and buttons for actions. Expose the current page and disclosure state appropriately. Ensure keyboard users can enter, operate and leave menus without a trap."
+            },
+            {
+              "id": "accessibility-workshop-3",
+              "title": "Check focus and presentation",
+              "body": "Keep focus visible and logical. Check that overlays close predictably and return focus to a sensible place. Enlarged text, narrow screens and persistent headers must not conceal required controls or content."
+            },
+            {
+              "id": "accessibility-workshop-4",
+              "title": "Preserve multiple cues",
+              "body": "Do not rely on colour, position, sound or an icon alone. Give icon controls meaningful accessible names and provide text for essential audio information. Use language versions based on audience needs and maintain terminology consistently."
+            },
+            {
+              "id": "accessibility-workshop-5",
+              "title": "Practise",
+              "body": "Using only the keyboard, open a section, visit a deep destination and return. Repeat at enlarged text and a narrow viewport. If possible, inspect announcements with a screen reader."
+            },
+            {
+              "id": "accessibility-workshop-6",
+              "title": "Review your work",
+              "body": "Record the exact action and observed failure, not “accessibility is bad”. Automated checks can help identify issues but do not establish full accessibility or legal conformance. Include people with relevant access needs in research."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "migration",
+          "type": "slides",
+          "title": "Plan a safe information migration",
+          "slides": [
+            {
+              "id": "migration-1",
+              "title": "Map old items to new destinations",
+              "body": "This authored workshop covers change implementation. Keep a mapping from old identifiers and URLs to retained, merged, replacement or intentionally retired items. A redesign can break established routes even when the new structure is clearer."
+            },
+            {
+              "id": "migration-2",
+              "title": "Handle redirects and references",
+              "body": "For moved content, plan appropriate redirects and update internal links. Avoid redirecting unrelated old pages to Home merely to conceal missing content. Review documents, bookmarks, external services and search indexing."
+            },
+            {
+              "id": "migration-3",
+              "title": "Define a cross-listing policy",
+              "body": "Choose canonical records and document alternate routes. Check breadcrumb consistency, feeds and related-content queries. One visible page can depend on several backend relationships."
+            },
+            {
+              "id": "migration-4",
+              "title": "Worked migration row",
+              "body": "Old: /member-zone/refunds. New: /booking-help/cancellation-refunds. Decision: move verified policy, redirect the old URL, update booking confirmations, preserve the owner and test both entry routes."
+            },
+            {
+              "id": "migration-5",
+              "title": "Practise",
+              "body": "Map five old URLs, including a merger and a retirement. Define acceptance checks and a rollback plan for a high-risk move."
+            },
+            {
+              "id": "migration-6",
+              "title": "Review your work",
+              "body": "Verify destination relevance, redirect loops, access permissions, saved links and content accuracy. Test important routes before and after release. Record what to restore if the release creates a critical finding failure."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "governance",
+          "type": "slides",
+          "title": "Maintain the architecture after launch",
+          "slides": [
+            {
+              "id": "governance-1",
+              "title": "Assign decisions to owners",
+              "body": "This authored workshop treats IA as a maintained system. Decide who may add categories, rename terms, create content types and approve cross-listing. Keep a lightweight decision record."
+            },
+            {
+              "id": "governance-2",
+              "title": "Define review triggers",
+              "body": "Review after new services, repeated support questions, failed searches, changed user language or observed task failures. A calendar review helps but does not replace responding to meaningful changes."
+            },
+            {
+              "id": "governance-3",
+              "title": "Monitor outcomes",
+              "body": "Track task success research, search failures, broken routes and support themes. Traffic and clicks need interpretation. An unused page could be unnecessary, hard to find or useful only at a rare but important moment."
+            },
+            {
+              "id": "governance-4",
+              "title": "Worked decision record",
+              "body": "Proposal: rename Enrichment to Courses. Evidence: newcomers cannot predict the contents. Owner: learning editor. Validation: tree test and observed finding task. Follow-up: review failed searches after release. Record the version and remaining uncertainty."
+            },
+            {
+              "id": "governance-5",
+              "title": "Practise",
+              "body": "Create a category-change request with its rationale, affected content, owner, research, migration actions and review trigger."
+            },
+            {
+              "id": "governance-6",
+              "title": "Review your work",
+              "body": "Could another editor apply the rule consistently? Does the proposal protect existing routes and content accuracy? Keep a method for retiring obsolete terms and mapping useful synonyms without silently losing content."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "capstone",
+          "type": "slides",
+          "title": "Build and evaluate your own IA",
+          "slides": [
+            {
+              "id": "capstone-1",
+              "title": "Stage 1: define the brief",
+              "body": "Choose a manageable information space. Name the audience, three important tasks, constraints and unknowns. Produce an inventory and audit. Keep a baseline structure and distinguish facts from assumptions."
+            },
+            {
+              "id": "capstone-2",
+              "title": "Stage 2: propose the architecture",
+              "body": "Choose an organising scheme. Create a sitemap, content model and small controlled vocabulary. Write category labels, explain boundaries and justify any cross-listing. Record why competing options were rejected."
+            },
+            {
+              "id": "capstone-3",
+              "title": "Stage 3: research the structure",
+              "body": "Prepare an appropriate card sort or use existing evidence. Create unbiased tree-test tasks and define acceptable destinations. Pilot, gather evidence and revise. Report sample limitations; invented practice data must remain labelled fictional."
+            },
+            {
+              "id": "capstone-4",
+              "title": "Stage 4: specify navigation",
+              "body": "Choose global, local, utility and contextual routes. Plan direct-entry orientation, breadcrumbs and mobile subnavigation. Specify expanded, current, loading and failure states. Include keyboard and focus behaviour."
+            },
+            {
+              "id": "capstone-5",
+              "title": "Stage 5: test and maintain",
+              "body": "Observe important tasks in a realistic prototype. Compare the result with your baseline using equivalent criteria. Produce migration, ownership and monitoring plans. Identify what remains untested."
+            },
+            {
+              "id": "capstone-6",
+              "title": "Self-assessment rubric",
+              "body": "| Evidence | Check |\n| --- | --- |\n| Structure | New content has a clear home |\n| Labels | Readers predict destinations |\n| Research | Method answers the stated question |\n| Navigation | Tasks work across tested input modes |\n| Maintenance | Owners and change rules are defined |"
+            },
+            {
+              "id": "capstone-7",
+              "title": "Review and iterate",
+              "body": "Ask someone to challenge one category boundary and complete one task without coaching. Revise using what you observe. Your final submission is a reasoned proposal plus evidence and limitations, not simply a polished sitemap."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "apply-check",
+          "type": "quiz",
+          "title": "Check: Apply and maintain",
+          "skill": "Check: Apply and maintain",
+          "questions": [
+            {
+              "id": "apply-check-q1",
+              "prompt": "Two fee pages conflict. Your first response should be:",
+              "options": [
+                "Rename both without checking prices",
+                "Verify the authoritative facts and plan consolidation",
+                "Choose the page with more traffic as automatically correct"
+              ],
+              "answer": 1,
+              "explanation": "Organisation cannot resolve factual accuracy by itself."
+            },
+            {
+              "id": "apply-check-q2",
+              "prompt": "Why record AND/OR rules for filters?",
+              "options": [
+                "They determine which results remain after selection",
+                "They determine the page’s background colour",
+                "They eliminate all empty results"
+              ],
+              "answer": 0,
+              "explanation": "Within and across facets, combination rules change retrieval behaviour."
+            },
+            {
+              "id": "apply-check-q3",
+              "prompt": "Five interviews produce a common complaint. Report it as:",
+              "options": [
+                "A precise population prevalence estimate",
+                "Proof that every user has the issue",
+                "An exploratory finding with sample and context"
+              ],
+              "answer": 2,
+              "explanation": "Qualitative patterns can motivate changes without establishing prevalence."
+            },
+            {
+              "id": "apply-check-q4",
+              "prompt": "A moved refund page had established incoming links. Plan:",
+              "options": [
+                "Deleting all old URLs without checking use",
+                "Relevant redirects, updated references and route checks",
+                "Redirecting every old page to Home regardless of subject"
+              ],
+              "answer": 1,
+              "explanation": "Migration should preserve meaningful established access."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "type": "section",
+      "title": "11 Reference",
+      "children": [
+        {
+          "id": "glossary",
+          "type": "slides",
+          "title": "Terminology lookup",
+          "slides": [
+            {
+              "id": "glossary-1",
+              "title": "IA",
+              "body": "The relationships, organisation and naming of an information space."
+            },
+            {
+              "id": "glossary-2",
+              "title": "Navigation",
+              "body": "The interface routes used to reach content and functions."
+            },
+            {
+              "id": "glossary-3",
+              "title": "Mental model",
+              "body": "A person’s understanding or expectation of how something works."
+            },
+            {
+              "id": "glossary-4",
+              "title": "Information scent",
+              "body": "Cues used to predict whether a route will satisfy a need."
+            },
+            {
+              "id": "glossary-5",
+              "title": "Findability and discoverability",
+              "body": "Finding something expected versus encountering something previously unknown."
+            },
+            {
+              "id": "glossary-6",
+              "title": "Hierarchy and polyhierarchy",
+              "body": "One-parent organisation versus a structure in which some items have multiple parents."
+            },
+            {
+              "id": "glossary-7",
+              "title": "Taxonomy and metadata",
+              "body": "A controlled hierarchical vocabulary; descriptive data attached to content."
+            },
+            {
+              "id": "glossary-8",
+              "title": "Content model",
+              "body": "The types, fields and relationships used to represent content."
+            },
+            {
+              "id": "glossary-9",
+              "title": "Card sort",
+              "body": "A study of how participants group content."
+            },
+            {
+              "id": "glossary-10",
+              "title": "Tree test",
+              "body": "A task-based evaluation of a stripped-down hierarchy."
+            },
+            {
+              "id": "glossary-11",
+              "title": "Dendrogram",
+              "body": "A visual representation of clustering under a particular analysis method."
+            },
+            {
+              "id": "glossary-12",
+              "title": "Success and directness",
+              "body": "Reaching an acceptable destination versus how directly a route is followed; state tool definitions and denominators."
+            },
+            {
+              "id": "glossary-13",
+              "title": "Global and local navigation",
+              "body": "Major site-wide routes versus routes within a section."
+            },
+            {
+              "id": "glossary-14",
+              "title": "Utility and contextual navigation",
+              "body": "Supporting tools versus links relevant to the current content or activity."
+            },
+            {
+              "id": "glossary-15",
+              "title": "Breadcrumb",
+              "body": "A compact representation of location in a hierarchy."
+            },
+            {
+              "id": "glossary-16",
+              "title": "Facet and filter",
+              "body": "A classification dimension; a constraint that narrows the current result set."
+            },
+            {
+              "id": "glossary-17",
+              "title": "Canonical record",
+              "body": "The maintained source record referenced through multiple routes."
+            },
+            {
+              "id": "glossary-18",
+              "title": "Governance",
+              "body": "Ownership and rules for maintaining decisions and responding to change."
+            }
+          ],
+          "sourceIds": []
+        },
+        {
+          "id": "source-directory",
+          "type": "slides",
+          "title": "Reading directory and coverage",
+          "slides": [
+            {
+              "id": "source-directory-1",
+              "title": "Reading scope",
+              "body": "The 46 numbered resources in NN/g’s IA study guide each map to one core lesson, in the recommended order within Principles, Research and Navigation. Applied workshops are additional authored practice. Supplementary research guides are linked for further study; their entire reading collections are outside this course’s scope."
+            },
+            {
+              "id": "source-directory-2",
+              "title": "Principles readings 1",
+              "body": "1. [The Difference Between Information Architecture (IA) and Navigation](https://www.nngroup.com/articles/ia-vs-navigation/)\n\n2. [Information Architecture: 3 Key Models (Video)](https://www.nngroup.com/videos/information-architecture-models/)\n\n3. [Findability vs. Discoverability (Video)](https://www.nngroup.com/videos/findability-vs-discoverability/)"
+            },
+            {
+              "id": "source-directory-3",
+              "title": "Principles readings 2",
+              "body": "4. [Information Scent: How Users Decide Where to Go Next](https://www.nngroup.com/articles/information-scent/)\n\n5. [Search Box vs. Navigation (Video)](https://www.nngroup.com/videos/search-box-vs-navigation/)\n\n6. [How Many Items in a Navigation Menu? (Video)](https://www.nngroup.com/videos/number-items-navigation-menu/)"
+            },
+            {
+              "id": "source-directory-4",
+              "title": "Principles readings 3",
+              "body": "7. [Flat vs. Deep Website Hierarchies](https://www.nngroup.com/articles/flat-vs-deep-hierarchy/)\n\n8. [Top 10 Information Architecture (IA) Mistakes](https://www.nngroup.com/articles/top-10-ia-mistakes/)\n\n9. [Top 3 IA Questions about Navigation Menus](https://www.nngroup.com/articles/ia-questions-navigation-menus/)"
+            },
+            {
+              "id": "source-directory-5",
+              "title": "Principles readings 4",
+              "body": "10. [The 3-Click Rule for Navigation Is False](https://www.nngroup.com/articles/3-click-rule/)\n\n11. [Polyhierarchies Improve Findability for Ambiguous IA Categories](https://www.nngroup.com/articles/polyhierarchy/)\n\n12. [Polyhierarchy in Information Architecture (Video)](https://www.nngroup.com/videos/polyhierarchy-information-architecture/)"
+            },
+            {
+              "id": "source-directory-6",
+              "title": "Principles readings 5",
+              "body": "13. [How to Handle Category Outliers in Your IA](https://www.nngroup.com/articles/ia-category-outliers/)\n\n14. [Better Labels for Website Links: the 4 Ss for Encouraging clicks (Video)](https://www.nngroup.com/videos/better-link-labels/)\n\n15. [“Learn More” Links: You Can Do Better](https://www.nngroup.com/articles/learn-more-links/)"
+            },
+            {
+              "id": "source-directory-7",
+              "title": "Principles readings 6",
+              "body": "16. [3 Common IA Mistakes (that Are All Due to Low Information Scent)](https://www.nngroup.com/articles/3-ia-mistakes/)\n\n17. [Taxonomy 101: Definition, Best Practices, and How It Complements Other IA Work](https://www.nngroup.com/articles/taxonomy-101/)"
+            },
+            {
+              "id": "source-directory-8",
+              "title": "Research readings 1",
+              "body": "18. [Card Sorting: Uncover Users' Mental Models](https://www.nngroup.com/articles/card-sorting-definition/)\n\n19. [Open vs. Closed Card Sorting (Video)](https://www.nngroup.com/videos/open-vs-closed-card-sorting/)\n\n20. [Card Sorting: Pushing Users Beyond Terminology Matches](https://www.nngroup.com/articles/card-sorting-terminology-matches/)"
+            },
+            {
+              "id": "source-directory-9",
+              "title": "Research readings 2",
+              "body": "21. [Card Sorting: How Many Users to Test](https://www.nngroup.com/articles/card-sorting-how-many-users-to-test/)\n\n22. [How to Avoid Bias in Card Sorting (Video)](https://www.nngroup.com/videos/bias-card-sorting/)\n\n23. [How to Interpret Dendrograms from Card Sorting to Improve Information Architecture (Video)](https://www.nngroup.com/videos/ia-dendrogram/)"
+            },
+            {
+              "id": "source-directory-10",
+              "title": "Research readings 3",
+              "body": "24. [Tree Testing to Evaluate Information Architecture Categories (Video)](https://www.nngroup.com/videos/tree-testing/)\n\n25. [Tree Testing: Evaluate Menu Labels and Categories](https://www.nngroup.com/articles/tree-testing/)\n\n26. [Tree Testing Part 2: Interpreting the Results](https://www.nngroup.com/articles/interpreting-tree-test-results/)"
+            },
+            {
+              "id": "source-directory-11",
+              "title": "Research readings 4",
+              "body": "27. [Low Findability and Discoverability: Four Testing Methods to Identify the Causes](https://www.nngroup.com/articles/navigation-ia-tests/)"
+            },
+            {
+              "id": "source-directory-12",
+              "title": "Navigation readings 1",
+              "body": "28. [Menu-Design Checklist: 17 UX Guidelines](https://www.nngroup.com/articles/menu-design/)\n\n29. [Navigation Menus - 5 Tips to Make Them Visible (Video)](https://www.nngroup.com/videos/navigation-menu-visibility/)\n\n30. [Hamburger Menus and Hidden Navigation Hurt UX Metrics](https://www.nngroup.com/articles/hamburger-menus/)"
+            },
+            {
+              "id": "source-directory-13",
+              "title": "Navigation readings 2",
+              "body": "31. [Killing Off the Global Navigation: One Trend to Avoid | Nielsen Norman Group](https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/)\n\n32. [Audience-Based Website Navigation (Video)](https://www.nngroup.com/videos/audience-based-website-navigation/)\n\n33. [Navigation: You Are Here](https://www.nngroup.com/articles/navigation-you-are-here/)"
+            },
+            {
+              "id": "source-directory-14",
+              "title": "Navigation readings 3",
+              "body": "34. [Digital Wayfinding (Video)](https://www.nngroup.com/videos/digital-wayfinding/)\n\n35. [Breadcrumbs: 11 Design Guidelines for Desktop and Mobile](https://www.nngroup.com/articles/breadcrumbs/)\n\n36. [Local Navigation Is a Valuable Orientation and Wayfinding Aid](https://www.nngroup.com/articles/local-navigation/)"
+            },
+            {
+              "id": "source-directory-15",
+              "title": "Navigation readings 4",
+              "body": "37. [Sticky Headers: 5 Ways to Make Them Better](https://www.nngroup.com/articles/sticky-headers/)\n\n38. [Left-Side Vertical Navigation on Desktop: Scalable, Responsive, and Easy to Scan](https://www.nngroup.com/articles/vertical-nav/)\n\n39. [Vertical Navigation (Video)](https://www.nngroup.com/videos/vertical-navigation/)"
+            },
+            {
+              "id": "source-directory-16",
+              "title": "Navigation readings 5",
+              "body": "40. [Utility Navigation: What It Is and How to Design It](https://www.nngroup.com/articles/utility-navigation/)\n\n41. [Web Page Footers 101: Design Patterns and When to Use Each](https://www.nngroup.com/articles/footers/)\n\n42. [Mega Menus Work Well for Site Navigation](https://www.nngroup.com/articles/mega-menus-work-well/)"
+            },
+            {
+              "id": "source-directory-17",
+              "title": "Navigation readings 6",
+              "body": "43. [Centered Logos Hurt Website Navigation](https://www.nngroup.com/articles/centered-logos/)\n\n44. [Basic Patterns for Mobile Navigation](https://www.nngroup.com/articles/mobile-navigation-patterns/)\n\n45. [Mobile Subnavigation](https://www.nngroup.com/articles/mobile-subnavigation/)"
+            },
+            {
+              "id": "source-directory-18",
+              "title": "Navigation readings 7",
+              "body": "46. [Accordion Icons: Which Signifiers Work Best?](https://www.nngroup.com/articles/accordion-icons/)"
+            },
+            {
+              "id": "source-directory-19",
+              "title": "Further research guides",
+              "body": "[Information Architecture: Study Guide](https://www.nngroup.com/articles/ia-study-guide/)\n\n[Qualitative Usability Testing: Study Guide](https://www.nngroup.com/articles/qual-usability-testing-study-guide/)\n\n[Quantitative User Research: Study Guide](https://www.nngroup.com/articles/quantitative-research-study-guide/)"
+            },
+            {
+              "id": "source-directory-20",
+              "title": "Review notes",
+              "body": "Sources checked 19 October 2026. The menu checklist now has 17 items although the study guide still says 15. Video summaries were available, not transcripts. The accordion-icon article was available through an indexed excerpt when its direct page failed. Read originals for their full evidence, examples and qualifications."
+            }
+          ],
+          "sourceIds": []
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "passScore": 80,
+    "allowRetakes": true,
+    "showLessonDetails": false,
+    "unlockAll": true,
+    "sequential": false,
+    "requireLessons": true,
+    "brand": "#1d70b8",
+    "background": "#ffffff",
+    "surface": "#f3f2f1",
+    "text": "#0b0c0c",
+    "muted": "#505a5f",
+    "border": "#b1b4b6",
+    "fontScale": 1,
+    "spacing": 24,
+    "contentWidth": 850,
+    "radius": 2,
+    "font": "system",
+    "headingFont": "system",
+    "lineHeight": 1.6
+  },
+  "finalQuiz": {
+    "id": "ia-final",
+    "type": "quiz",
+    "title": "Final scenario review",
+    "skill": "Final scenario review",
+    "questions": [
+      {
+        "id": "ia-final-q1",
+        "prompt": "A site’s departments are clear to staff but confusing to newcomers. First:",
+        "options": [
+          "Make department names more prominent",
+          "Investigate newcomer tasks and vocabulary",
+          "Copy the organisation chart into the menu"
+        ],
+        "answer": 1,
+        "explanation": "Research the audience’s expectations before committing to internal categories."
+      },
+      {
+        "id": "ia-final-q2",
+        "prompt": "A category gets many clicks but people abandon its page. What can you infer?",
+        "options": [
+          "The route needs investigation; clicks alone do not establish success",
+          "The category is definitely correctly named",
+          "The destination must have too many paragraphs"
+        ],
+        "answer": 0,
+        "explanation": "Compare expectations, destination content and task outcomes."
+      },
+      {
+        "id": "ia-final-q3",
+        "prompt": "A new workshop fits two subjects and has one date record. Implement:",
+        "options": [
+          "Two independent records with manually synchronised dates",
+          "A separate website for each subject",
+          "One maintained record with justified alternate relationships"
+        ],
+        "answer": 2,
+        "explanation": "Multiple routes should not create conflicting content copies."
+      },
+      {
+        "id": "ia-final-q4",
+        "prompt": "You want to know how learners group preparation and payment information. Choose:",
+        "options": [
+          "A count of total pages",
+          "A representative card sort with neutral wording",
+          "An aesthetic preference poll about colours"
+        ],
+        "answer": 1,
+        "explanation": "Grouping expectations require evidence about the content concepts."
+      },
+      {
+        "id": "ia-final-q5",
+        "prompt": "Most tree-test users choose the wrong first category. Investigate:",
+        "options": [
+          "Top-level expectations, scope and labels",
+          "Only the final-page button spacing",
+          "Only how the footer logo is centred"
+        ],
+        "answer": 0,
+        "explanation": "First choices help locate the structural uncertainty."
+      },
+      {
+        "id": "ia-final-q6",
+        "prompt": "One tree succeeds for 7 of 10; another for 8 of 10. Conclude:",
+        "options": [
+          "The second is proven better for the whole population",
+          "Both have identical causes of failure",
+          "More evidence and appropriate analysis are needed for a reliable comparison"
+        ],
+        "answer": 2,
+        "explanation": "A small numerical difference is not automatically meaningful."
+      },
+      {
+        "id": "ia-final-q7",
+        "prompt": "A breadcrumb displays yesterday’s browsing sequence. It represents:",
+        "options": [
+          "The only valid breadcrumb approach",
+          "History rather than the usual hierarchical location trail",
+          "A complete taxonomy"
+        ],
+        "answer": 1,
+        "explanation": "A location trail and a session history serve different purposes."
+      },
+      {
+        "id": "ia-final-q8",
+        "prompt": "Which desktop pattern might suit many descriptive categories?",
+        "options": [
+          "A readable vertical menu evaluated in context",
+          "An arbitrary maximum of four vague labels",
+          "A tiny unlabelled menu icon regardless of available space"
+        ],
+        "answer": 0,
+        "explanation": "Match the pattern to the content and tasks."
+      },
+      {
+        "id": "ia-final-q9",
+        "prompt": "After a successful tree test, the next prototype hides its menu in an image. What remains?",
+        "options": [
+          "Only celebrating the tree result",
+          "No validation; the IA test covers all UI decisions",
+          "Interface visibility, operation and full task testing"
+        ],
+        "answer": 2,
+        "explanation": "Structure-only evidence cannot validate the visual controls."
+      },
+      {
+        "id": "ia-final-q10",
+        "prompt": "How should a search result distinguish similarly named courses?",
+        "options": [
+          "Unverified claims that one is the best",
+          "Useful metadata such as level, schedule and venue",
+          "Identical Learn more links only"
+        ],
+        "answer": 1,
+        "explanation": "Relevant context helps visitors predict a match."
+      },
+      {
+        "id": "ia-final-q11",
+        "prompt": "What makes an IA change maintainable?",
+        "options": [
+          "Named owners, rules, migration checks and review triggers",
+          "A polished sitemap with no ownership",
+          "Preventing all future content additions"
+        ],
+        "answer": 0,
+        "explanation": "Architecture needs decisions and review after launch."
+      },
+      {
+        "id": "ia-final-q12",
+        "prompt": "What is a credible capstone conclusion?",
+        "options": [
+          "A quiz score proving universal professional competence",
+          "The new site is perfect because it has fewer clicks",
+          "What improved, the supporting evidence and what remains uncertain"
+        ],
+        "answer": 2,
+        "explanation": "Report outcomes and limits in proportion to the evidence."
+      }
+    ]
+  }
+}

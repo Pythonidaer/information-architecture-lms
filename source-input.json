@@ -1,0 +1,437 @@
+[
+  {
+    "id": "nng-30",
+    "guideOrder": 1,
+    "guideGroup": "Principles",
+    "title": "The Difference Between Information Architecture (IA) and Navigation",
+    "url": "https://www.nngroup.com/articles/ia-vs-navigation/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-31",
+    "guideOrder": 2,
+    "guideGroup": "Principles",
+    "title": "Information Architecture: 3 Key Models (Video)",
+    "url": "https://www.nngroup.com/videos/information-architecture-models/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-32",
+    "guideOrder": 3,
+    "guideGroup": "Principles",
+    "title": "Findability vs. Discoverability (Video)",
+    "url": "https://www.nngroup.com/videos/findability-vs-discoverability/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-33",
+    "guideOrder": 4,
+    "guideGroup": "Principles",
+    "title": "Information Scent: How Users Decide Where to Go Next",
+    "url": "https://www.nngroup.com/articles/information-scent/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-34",
+    "guideOrder": 5,
+    "guideGroup": "Principles",
+    "title": "Search Box vs. Navigation (Video)",
+    "url": "https://www.nngroup.com/videos/search-box-vs-navigation/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-35",
+    "guideOrder": 6,
+    "guideGroup": "Principles",
+    "title": "How Many Items in a Navigation Menu? (Video)",
+    "url": "https://www.nngroup.com/videos/number-items-navigation-menu/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-36",
+    "guideOrder": 7,
+    "guideGroup": "Principles",
+    "title": "Flat vs. Deep Website Hierarchies",
+    "url": "https://www.nngroup.com/articles/flat-vs-deep-hierarchy/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-37",
+    "guideOrder": 8,
+    "guideGroup": "Principles",
+    "title": "Top 10 Information Architecture (IA) Mistakes",
+    "url": "https://www.nngroup.com/articles/top-10-ia-mistakes/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-38",
+    "guideOrder": 9,
+    "guideGroup": "Principles",
+    "title": "Top 3 IA Questions about Navigation Menus",
+    "url": "https://www.nngroup.com/articles/ia-questions-navigation-menus/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-39",
+    "guideOrder": 10,
+    "guideGroup": "Principles",
+    "title": "The 3-Click Rule for Navigation Is False",
+    "url": "https://www.nngroup.com/articles/3-click-rule/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-40",
+    "guideOrder": 11,
+    "guideGroup": "Principles",
+    "title": "Polyhierarchies Improve Findability for Ambiguous IA Categories",
+    "url": "https://www.nngroup.com/articles/polyhierarchy/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-41",
+    "guideOrder": 12,
+    "guideGroup": "Principles",
+    "title": "Polyhierarchy in Information Architecture (Video)",
+    "url": "https://www.nngroup.com/videos/polyhierarchy-information-architecture/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-42",
+    "guideOrder": 13,
+    "guideGroup": "Principles",
+    "title": "How to Handle Category Outliers in Your IA",
+    "url": "https://www.nngroup.com/articles/ia-category-outliers/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-43",
+    "guideOrder": 14,
+    "guideGroup": "Principles",
+    "title": "Better Labels for Website Links: the 4 Ss for Encouraging clicks (Video)",
+    "url": "https://www.nngroup.com/videos/better-link-labels/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-44",
+    "guideOrder": 15,
+    "guideGroup": "Principles",
+    "title": "“Learn More” Links: You Can Do Better",
+    "url": "https://www.nngroup.com/articles/learn-more-links/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-45",
+    "guideOrder": 16,
+    "guideGroup": "Principles",
+    "title": "3 Common IA Mistakes (that Are All Due to Low Information Scent)",
+    "url": "https://www.nngroup.com/articles/3-ia-mistakes/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-46",
+    "guideOrder": 17,
+    "guideGroup": "Principles",
+    "title": "Taxonomy 101: Definition, Best Practices, and How It Complements Other IA Work",
+    "url": "https://www.nngroup.com/articles/taxonomy-101/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-49",
+    "guideOrder": 18,
+    "guideGroup": "Research",
+    "title": "Card Sorting: Uncover Users' Mental Models",
+    "url": "https://www.nngroup.com/articles/card-sorting-definition/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-50",
+    "guideOrder": 19,
+    "guideGroup": "Research",
+    "title": "Open vs. Closed Card Sorting (Video)",
+    "url": "https://www.nngroup.com/videos/open-vs-closed-card-sorting/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-51",
+    "guideOrder": 20,
+    "guideGroup": "Research",
+    "title": "Card Sorting: Pushing Users Beyond Terminology Matches",
+    "url": "https://www.nngroup.com/articles/card-sorting-terminology-matches/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-52",
+    "guideOrder": 21,
+    "guideGroup": "Research",
+    "title": "Card Sorting: How Many Users to Test",
+    "url": "https://www.nngroup.com/articles/card-sorting-how-many-users-to-test/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-53",
+    "guideOrder": 22,
+    "guideGroup": "Research",
+    "title": "How to Avoid Bias in Card Sorting (Video)",
+    "url": "https://www.nngroup.com/videos/bias-card-sorting/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-54",
+    "guideOrder": 23,
+    "guideGroup": "Research",
+    "title": "How to Interpret Dendrograms from Card Sorting to Improve Information Architecture (Video)",
+    "url": "https://www.nngroup.com/videos/ia-dendrogram/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-55",
+    "guideOrder": 24,
+    "guideGroup": "Research",
+    "title": "Tree Testing to Evaluate Information Architecture Categories (Video)",
+    "url": "https://www.nngroup.com/videos/tree-testing/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-56",
+    "guideOrder": 25,
+    "guideGroup": "Research",
+    "title": "Tree Testing: Evaluate Menu Labels and Categories",
+    "url": "https://www.nngroup.com/articles/tree-testing/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-57",
+    "guideOrder": 26,
+    "guideGroup": "Research",
+    "title": "Tree Testing Part 2: Interpreting the Results",
+    "url": "https://www.nngroup.com/articles/interpreting-tree-test-results/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-58",
+    "guideOrder": 27,
+    "guideGroup": "Research",
+    "title": "Low Findability and Discoverability: Four Testing Methods to Identify the Causes",
+    "url": "https://www.nngroup.com/articles/navigation-ia-tests/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-59",
+    "guideOrder": 28,
+    "guideGroup": "Navigation",
+    "title": "Menu-Design Checklist: 17 UX Guidelines",
+    "url": "https://www.nngroup.com/articles/menu-design/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-60",
+    "guideOrder": 29,
+    "guideGroup": "Navigation",
+    "title": "Navigation Menus - 5 Tips to Make Them Visible (Video)",
+    "url": "https://www.nngroup.com/videos/navigation-menu-visibility/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-61",
+    "guideOrder": 30,
+    "guideGroup": "Navigation",
+    "title": "Hamburger Menus and Hidden Navigation Hurt UX Metrics",
+    "url": "https://www.nngroup.com/articles/hamburger-menus/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-62",
+    "guideOrder": 31,
+    "guideGroup": "Navigation",
+    "title": "Killing Off the Global Navigation: One Trend to Avoid | Nielsen Norman Group",
+    "url": "https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-63",
+    "guideOrder": 32,
+    "guideGroup": "Navigation",
+    "title": "Audience-Based Website Navigation (Video)",
+    "url": "https://www.nngroup.com/videos/audience-based-website-navigation/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-64",
+    "guideOrder": 33,
+    "guideGroup": "Navigation",
+    "title": "Navigation: You Are Here",
+    "url": "https://www.nngroup.com/articles/navigation-you-are-here/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-65",
+    "guideOrder": 34,
+    "guideGroup": "Navigation",
+    "title": "Digital Wayfinding (Video)",
+    "url": "https://www.nngroup.com/videos/digital-wayfinding/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-66",
+    "guideOrder": 35,
+    "guideGroup": "Navigation",
+    "title": "Breadcrumbs: 11 Design Guidelines for Desktop and Mobile",
+    "url": "https://www.nngroup.com/articles/breadcrumbs/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-67",
+    "guideOrder": 36,
+    "guideGroup": "Navigation",
+    "title": "Local Navigation Is a Valuable Orientation and Wayfinding Aid",
+    "url": "https://www.nngroup.com/articles/local-navigation/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-68",
+    "guideOrder": 37,
+    "guideGroup": "Navigation",
+    "title": "Sticky Headers: 5 Ways to Make Them Better",
+    "url": "https://www.nngroup.com/articles/sticky-headers/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-69",
+    "guideOrder": 38,
+    "guideGroup": "Navigation",
+    "title": "Left-Side Vertical Navigation on Desktop: Scalable, Responsive, and Easy to Scan",
+    "url": "https://www.nngroup.com/articles/vertical-nav/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-70",
+    "guideOrder": 39,
+    "guideGroup": "Navigation",
+    "title": "Vertical Navigation (Video)",
+    "url": "https://www.nngroup.com/videos/vertical-navigation/",
+    "format": "video",
+    "reviewStatus": "Page summary reviewed; video transcript unavailable"
+  },
+  {
+    "id": "nng-71",
+    "guideOrder": 40,
+    "guideGroup": "Navigation",
+    "title": "Utility Navigation: What It Is and How to Design It",
+    "url": "https://www.nngroup.com/articles/utility-navigation/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-72",
+    "guideOrder": 41,
+    "guideGroup": "Navigation",
+    "title": "Web Page Footers 101: Design Patterns and When to Use Each",
+    "url": "https://www.nngroup.com/articles/footers/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-73",
+    "guideOrder": 42,
+    "guideGroup": "Navigation",
+    "title": "Mega Menus Work Well for Site Navigation",
+    "url": "https://www.nngroup.com/articles/mega-menus-work-well/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-74",
+    "guideOrder": 43,
+    "guideGroup": "Navigation",
+    "title": "Centered Logos Hurt Website Navigation",
+    "url": "https://www.nngroup.com/articles/centered-logos/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-75",
+    "guideOrder": 44,
+    "guideGroup": "Navigation",
+    "title": "Basic Patterns for Mobile Navigation",
+    "url": "https://www.nngroup.com/articles/mobile-navigation-patterns/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-76",
+    "guideOrder": 45,
+    "guideGroup": "Navigation",
+    "title": "Mobile Subnavigation",
+    "url": "https://www.nngroup.com/articles/mobile-subnavigation/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-77",
+    "guideOrder": 46,
+    "guideGroup": "Navigation",
+    "title": "Accordion Icons: Which Signifiers Work Best?",
+    "url": "https://www.nngroup.com/articles/accordion-icons/",
+    "format": "article",
+    "reviewStatus": "Article reviewed"
+  },
+  {
+    "id": "nng-47",
+    "title": "Qualitative Usability Testing: Study Guide",
+    "url": "https://www.nngroup.com/articles/qual-usability-testing-study-guide/",
+    "format": "study-guide",
+    "reviewStatus": "Supplementary guide reviewed; not its entire reading collection"
+  },
+  {
+    "id": "nng-48",
+    "title": "Quantitative User Research: Study Guide",
+    "url": "https://www.nngroup.com/articles/quantitative-research-study-guide/",
+    "format": "study-guide",
+    "reviewStatus": "Supplementary guide reviewed; not its entire reading collection"
+  },
+  {
+    "id": "guide",
+    "title": "Information Architecture: Study Guide",
+    "url": "https://www.nngroup.com/articles/ia-study-guide/",
+    "format": "study-guide",
+    "reviewStatus": "Reading order reviewed"
+  }
+]
